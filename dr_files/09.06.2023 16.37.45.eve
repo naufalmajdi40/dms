@@ -1,0 +1,5162 @@
+[General]
+Version=1.A
+Language=44
+
+[Relay]
+Name=MiCOM P123 BXXXXXX V12.E
+Address=1
+Version=12.E
+
+[Events]
+Count=275
+
+[Event 1]
+Date=09/06/2023
+Time=16:38:03.396000
+Type=Event
+Ack=0
+Num=127
+Code=9
+LinkedValue=0
+Title=09/06/2023,16:38:03.396000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 2]
+Date=09/06/2023
+Time=16:38:03.396000
+Type=Event
+Ack=0
+Num=128
+Code=17
+LinkedValue=0
+Title=09/06/2023,16:38:03.396000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 3]
+Date=09/06/2023
+Time=16:38:03.396000
+Type=Event
+Ack=0
+Num=129
+Code=99
+LinkedValue=12
+Title=09/06/2023,16:38:03.396000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 4]
+Date=09/06/2023
+Time=16:38:03.396000
+Type=Event
+Ack=0
+Num=130
+Code=100
+LinkedValue=8
+Title=09/06/2023,16:38:03.396000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 5]
+Date=09/06/2023
+Time=16:38:03.396000
+Type=Event
+Ack=0
+Num=131
+Code=101
+LinkedValue=0
+Title=09/06/2023,16:38:03.396000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 6]
+Date=09/06/2023
+Time=16:38:03.396000
+Type=Event
+Ack=0
+Num=132
+Code=50
+LinkedValue=16
+Title=09/06/2023,16:38:03.396000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 7]
+Date=09/06/2023
+Time=16:37:45.162000
+Type=Event
+Ack=0
+Num=126
+Code=101
+LinkedValue=46
+Title=09/06/2023,16:37:45.162000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 8]
+Date=09/06/2023
+Time=16:37:45.039000
+Type=Event
+Ack=0
+Num=125
+Code=3
+LinkedValue=2
+Title=09/06/2023,16:37:45.039000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 9]
+Date=09/06/2023
+Time=16:37:44.162000
+Type=Event
+Ack=0
+Num=124
+Code=100
+LinkedValue=38
+Title=09/06/2023,16:37:44.162000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 10]
+Date=09/06/2023
+Time=16:37:43.163000
+Type=Event
+Ack=0
+Num=123
+Code=99
+LinkedValue=34
+Title=09/06/2023,16:37:43.163000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 11]
+Date=09/06/2023
+Time=16:37:41.161000
+Type=Event
+Ack=0
+Num=120
+Code=17
+LinkedValue=109
+Title=09/06/2023,16:37:41.161000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 12]
+Date=09/06/2023
+Time=16:37:41.161000
+Type=Event
+Ack=0
+Num=121
+Code=40
+LinkedValue=109
+Title=09/06/2023,16:37:41.161000 Event : tI> TRIP
+Line 001=Event Label : tI> TRIP
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 13]
+Date=09/06/2023
+Time=16:37:41.161000
+Type=Event
+Ack=0
+Num=122
+Code=50
+LinkedValue=23
+Title=09/06/2023,16:37:41.161000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 1 1 1
+Line 003=-  Logic output relay 1 (Trip) ......................1
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................1
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 14]
+Date=09/06/2023
+Time=16:37:41.161000
+Type=Fault
+Ack=0
+Num=197
+Code=3
+LinkedValue=6
+Title=09/06/2023,16:37:41.161000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.29
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.06375
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.29
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.19625
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 197
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 15]
+Date=09/06/2023
+Time=16:37:40.161000
+Type=Event
+Ack=0
+Num=118
+Code=9
+LinkedValue=45
+Title=09/06/2023,16:37:40.161000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 16]
+Date=09/06/2023
+Time=16:37:40.161000
+Type=Event
+Ack=0
+Num=119
+Code=50
+LinkedValue=18
+Title=09/06/2023,16:37:40.161000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 17]
+Date=09/06/2023
+Time=16:37:40.039000
+Type=Event
+Ack=0
+Num=116
+Code=9
+LinkedValue=0
+Title=09/06/2023,16:37:40.039000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 18]
+Date=09/06/2023
+Time=16:37:40.039000
+Type=Event
+Ack=0
+Num=117
+Code=50
+LinkedValue=16
+Title=09/06/2023,16:37:40.039000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 19]
+Date=09/06/2023
+Time=16:37:40.021000
+Type=Event
+Ack=0
+Num=113
+Code=9
+LinkedValue=37
+Title=09/06/2023,16:37:40.021000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 20]
+Date=09/06/2023
+Time=16:37:40.021000
+Type=Event
+Ack=0
+Num=114
+Code=50
+LinkedValue=18
+Title=09/06/2023,16:37:40.021000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 21]
+Date=09/06/2023
+Time=16:37:40.021000
+Type=Event
+Ack=0
+Num=115
+Code=3
+LinkedValue=2
+Title=09/06/2023,16:37:40.021000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 22]
+Date=09/06/2023
+Time=16:37:37.661000
+Type=Event
+Ack=0
+Num=107
+Code=9
+LinkedValue=0
+Title=09/06/2023,16:37:37.661000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 23]
+Date=09/06/2023
+Time=16:37:37.661000
+Type=Event
+Ack=0
+Num=108
+Code=17
+LinkedValue=0
+Title=09/06/2023,16:37:37.661000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 24]
+Date=09/06/2023
+Time=16:37:37.661000
+Type=Event
+Ack=0
+Num=109
+Code=99
+LinkedValue=12
+Title=09/06/2023,16:37:37.661000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 25]
+Date=09/06/2023
+Time=16:37:37.661000
+Type=Event
+Ack=0
+Num=110
+Code=100
+LinkedValue=8
+Title=09/06/2023,16:37:37.661000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 26]
+Date=09/06/2023
+Time=16:37:37.661000
+Type=Event
+Ack=0
+Num=111
+Code=101
+LinkedValue=0
+Title=09/06/2023,16:37:37.661000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 27]
+Date=09/06/2023
+Time=16:37:37.661000
+Type=Event
+Ack=0
+Num=112
+Code=50
+LinkedValue=16
+Title=09/06/2023,16:37:37.661000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 28]
+Date=09/06/2023
+Time=15:06:35.916000
+Type=Event
+Ack=0
+Num=106
+Code=101
+LinkedValue=46
+Title=09/06/2023,15:06:35.916000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 29]
+Date=09/06/2023
+Time=15:06:35.831000
+Type=Event
+Ack=0
+Num=105
+Code=3
+LinkedValue=2
+Title=09/06/2023,15:06:35.831000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 30]
+Date=09/06/2023
+Time=15:06:34.916000
+Type=Event
+Ack=0
+Num=104
+Code=100
+LinkedValue=38
+Title=09/06/2023,15:06:34.916000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 31]
+Date=09/06/2023
+Time=15:06:33.914000
+Type=Event
+Ack=0
+Num=103
+Code=99
+LinkedValue=34
+Title=09/06/2023,15:06:33.914000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 32]
+Date=09/06/2023
+Time=15:06:31.914000
+Type=Event
+Ack=0
+Num=100
+Code=17
+LinkedValue=111
+Title=09/06/2023,15:06:31.914000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 33]
+Date=09/06/2023
+Time=15:06:31.914000
+Type=Event
+Ack=0
+Num=101
+Code=40
+LinkedValue=111
+Title=09/06/2023,15:06:31.914000 Event : tI> TRIP
+Line 001=Event Label : tI> TRIP
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 34]
+Date=09/06/2023
+Time=15:06:31.914000
+Type=Event
+Ack=0
+Num=102
+Code=50
+LinkedValue=23
+Title=09/06/2023,15:06:31.914000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 1 1 1
+Line 003=-  Logic output relay 1 (Trip) ......................1
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................1
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 35]
+Date=09/06/2023
+Time=15:06:31.914000
+Type=Fault
+Ack=0
+Num=196
+Code=3
+LinkedValue=7
+Title=09/06/2023,15:06:31.914000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.24375
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.1975
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.24375
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.165
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 196
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 36]
+Date=09/06/2023
+Time=15:06:30.914000
+Type=Event
+Ack=0
+Num=98
+Code=9
+LinkedValue=47
+Title=09/06/2023,15:06:30.914000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 37]
+Date=09/06/2023
+Time=15:06:30.914000
+Type=Event
+Ack=0
+Num=99
+Code=50
+LinkedValue=18
+Title=09/06/2023,15:06:30.914000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 38]
+Date=09/06/2023
+Time=15:06:30.792000
+Type=Event
+Ack=0
+Num=96
+Code=9
+LinkedValue=0
+Title=09/06/2023,15:06:30.792000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 39]
+Date=09/06/2023
+Time=15:06:30.792000
+Type=Event
+Ack=0
+Num=97
+Code=50
+LinkedValue=16
+Title=09/06/2023,15:06:30.792000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 40]
+Date=09/06/2023
+Time=15:06:30.777000
+Type=Event
+Ack=0
+Num=93
+Code=9
+LinkedValue=39
+Title=09/06/2023,15:06:30.777000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 41]
+Date=09/06/2023
+Time=15:06:30.777000
+Type=Event
+Ack=0
+Num=94
+Code=50
+LinkedValue=18
+Title=09/06/2023,15:06:30.777000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 42]
+Date=09/06/2023
+Time=15:06:30.777000
+Type=Event
+Ack=0
+Num=95
+Code=3
+LinkedValue=2
+Title=09/06/2023,15:06:30.777000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 43]
+Date=09/06/2023
+Time=15:06:29.499000
+Type=Event
+Ack=0
+Num=92
+Code=51
+LinkedValue=0
+Title=09/06/2023,15:06:29.499000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 44]
+Date=09/06/2023
+Time=15:06:29.259000
+Type=Event
+Ack=0
+Num=91
+Code=51
+LinkedValue=0
+Title=09/06/2023,15:06:29.259000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 45]
+Date=09/06/2023
+Time=15:06:29.052000
+Type=Event
+Ack=0
+Num=90
+Code=51
+LinkedValue=0
+Title=09/06/2023,15:06:29.052000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 46]
+Date=09/06/2023
+Time=15:06:28.797000
+Type=Event
+Ack=0
+Num=89
+Code=51
+LinkedValue=0
+Title=09/06/2023,15:06:28.797000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 47]
+Date=09/06/2023
+Time=15:06:28.554000
+Type=Event
+Ack=0
+Num=88
+Code=51
+LinkedValue=0
+Title=09/06/2023,15:06:28.554000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 48]
+Date=09/06/2023
+Time=15:06:24.887000
+Type=Event
+Ack=0
+Num=82
+Code=9
+LinkedValue=0
+Title=09/06/2023,15:06:24.887000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 49]
+Date=09/06/2023
+Time=15:06:24.887000
+Type=Event
+Ack=0
+Num=83
+Code=17
+LinkedValue=0
+Title=09/06/2023,15:06:24.887000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 50]
+Date=09/06/2023
+Time=15:06:24.887000
+Type=Event
+Ack=0
+Num=84
+Code=99
+LinkedValue=12
+Title=09/06/2023,15:06:24.887000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 51]
+Date=09/06/2023
+Time=15:06:24.887000
+Type=Event
+Ack=0
+Num=85
+Code=100
+LinkedValue=8
+Title=09/06/2023,15:06:24.887000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 52]
+Date=09/06/2023
+Time=15:06:24.887000
+Type=Event
+Ack=0
+Num=86
+Code=101
+LinkedValue=0
+Title=09/06/2023,15:06:24.887000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 53]
+Date=09/06/2023
+Time=15:06:24.887000
+Type=Event
+Ack=0
+Num=87
+Code=50
+LinkedValue=16
+Title=09/06/2023,15:06:24.887000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 54]
+Date=09/06/2023
+Time=14:55:58.690000
+Type=Event
+Ack=0
+Num=81
+Code=101
+LinkedValue=46
+Title=09/06/2023,14:55:58.690000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 55]
+Date=09/06/2023
+Time=14:55:58.630000
+Type=Event
+Ack=0
+Num=80
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:55:58.630000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 56]
+Date=09/06/2023
+Time=14:55:57.690000
+Type=Event
+Ack=0
+Num=79
+Code=100
+LinkedValue=38
+Title=09/06/2023,14:55:57.690000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 57]
+Date=09/06/2023
+Time=14:55:56.691000
+Type=Event
+Ack=0
+Num=78
+Code=99
+LinkedValue=34
+Title=09/06/2023,14:55:56.691000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 58]
+Date=09/06/2023
+Time=14:55:54.690000
+Type=Event
+Ack=0
+Num=75
+Code=17
+LinkedValue=111
+Title=09/06/2023,14:55:54.690000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 59]
+Date=09/06/2023
+Time=14:55:54.690000
+Type=Event
+Ack=0
+Num=76
+Code=40
+LinkedValue=111
+Title=09/06/2023,14:55:54.690000 Event : tI> TRIP
+Line 001=Event Label : tI> TRIP
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 60]
+Date=09/06/2023
+Time=14:55:54.690000
+Type=Event
+Ack=0
+Num=77
+Code=50
+LinkedValue=23
+Title=09/06/2023,14:55:54.690000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 1 1 1
+Line 003=-  Logic output relay 1 (Trip) ......................1
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................1
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 61]
+Date=09/06/2023
+Time=14:55:54.690000
+Type=Fault
+Ack=0
+Num=195
+Code=3
+LinkedValue=7
+Title=09/06/2023,14:55:54.690000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.29125
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.1225
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.29125
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.11625
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 195
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 62]
+Date=09/06/2023
+Time=14:55:53.691000
+Type=Event
+Ack=0
+Num=73
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:55:53.691000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 63]
+Date=09/06/2023
+Time=14:55:53.691000
+Type=Event
+Ack=0
+Num=74
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:55:53.691000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 64]
+Date=09/06/2023
+Time=14:55:53.571000
+Type=Event
+Ack=0
+Num=71
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:55:53.571000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 65]
+Date=09/06/2023
+Time=14:55:53.571000
+Type=Event
+Ack=0
+Num=72
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:55:53.571000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 66]
+Date=09/06/2023
+Time=14:55:53.553000
+Type=Event
+Ack=0
+Num=68
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:55:53.553000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 67]
+Date=09/06/2023
+Time=14:55:53.553000
+Type=Event
+Ack=0
+Num=69
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:55:53.553000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 68]
+Date=09/06/2023
+Time=14:55:53.553000
+Type=Event
+Ack=0
+Num=70
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:55:53.553000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 69]
+Date=09/06/2023
+Time=14:55:45.393000
+Type=Event
+Ack=0
+Num=62
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:55:45.393000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 70]
+Date=09/06/2023
+Time=14:55:45.393000
+Type=Event
+Ack=0
+Num=63
+Code=17
+LinkedValue=0
+Title=09/06/2023,14:55:45.393000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 71]
+Date=09/06/2023
+Time=14:55:45.393000
+Type=Event
+Ack=0
+Num=64
+Code=99
+LinkedValue=12
+Title=09/06/2023,14:55:45.393000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 72]
+Date=09/06/2023
+Time=14:55:45.393000
+Type=Event
+Ack=0
+Num=65
+Code=100
+LinkedValue=8
+Title=09/06/2023,14:55:45.393000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 73]
+Date=09/06/2023
+Time=14:55:45.393000
+Type=Event
+Ack=0
+Num=66
+Code=101
+LinkedValue=0
+Title=09/06/2023,14:55:45.393000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 74]
+Date=09/06/2023
+Time=14:55:45.393000
+Type=Event
+Ack=0
+Num=67
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:55:45.393000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 75]
+Date=09/06/2023
+Time=14:51:42.652000
+Type=Event
+Ack=0
+Num=61
+Code=101
+LinkedValue=46
+Title=09/06/2023,14:51:42.652000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 76]
+Date=09/06/2023
+Time=14:51:41.650000
+Type=Event
+Ack=0
+Num=60
+Code=100
+LinkedValue=38
+Title=09/06/2023,14:51:41.650000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 77]
+Date=09/06/2023
+Time=14:51:40.651000
+Type=Event
+Ack=0
+Num=59
+Code=99
+LinkedValue=34
+Title=09/06/2023,14:51:40.651000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 78]
+Date=09/06/2023
+Time=14:51:38.650000
+Type=Event
+Ack=0
+Num=56
+Code=17
+LinkedValue=111
+Title=09/06/2023,14:51:38.650000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 79]
+Date=09/06/2023
+Time=14:51:38.650000
+Type=Event
+Ack=0
+Num=57
+Code=40
+LinkedValue=111
+Title=09/06/2023,14:51:38.650000 Event : tI> TRIP
+Line 001=Event Label : tI> TRIP
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 80]
+Date=09/06/2023
+Time=14:51:38.650000
+Type=Event
+Ack=0
+Num=58
+Code=50
+LinkedValue=23
+Title=09/06/2023,14:51:38.650000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 1 1 1
+Line 003=-  Logic output relay 1 (Trip) ......................1
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................1
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 81]
+Date=09/06/2023
+Time=14:51:38.650000
+Type=Fault
+Ack=0
+Num=194
+Code=3
+LinkedValue=7
+Title=09/06/2023,14:51:38.650000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.24875
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.18375
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.24875
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.175
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 194
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 82]
+Date=09/06/2023
+Time=14:51:37.648000
+Type=Event
+Ack=0
+Num=54
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:51:37.648000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 83]
+Date=09/06/2023
+Time=14:51:37.648000
+Type=Event
+Ack=0
+Num=55
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:51:37.648000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 84]
+Date=09/06/2023
+Time=14:51:37.525000
+Type=Event
+Ack=0
+Num=52
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:51:37.525000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 85]
+Date=09/06/2023
+Time=14:51:37.525000
+Type=Event
+Ack=0
+Num=53
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:51:37.525000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 86]
+Date=09/06/2023
+Time=14:51:37.508000
+Type=Event
+Ack=0
+Num=49
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:51:37.508000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 87]
+Date=09/06/2023
+Time=14:51:37.508000
+Type=Event
+Ack=0
+Num=50
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:51:37.508000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 88]
+Date=09/06/2023
+Time=14:51:37.508000
+Type=Event
+Ack=0
+Num=51
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:51:37.508000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 89]
+Date=09/06/2023
+Time=14:51:28.201000
+Type=Event
+Ack=0
+Num=43
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:51:28.201000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 90]
+Date=09/06/2023
+Time=14:51:28.201000
+Type=Event
+Ack=0
+Num=44
+Code=17
+LinkedValue=0
+Title=09/06/2023,14:51:28.201000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 91]
+Date=09/06/2023
+Time=14:51:28.201000
+Type=Event
+Ack=0
+Num=45
+Code=99
+LinkedValue=12
+Title=09/06/2023,14:51:28.201000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 92]
+Date=09/06/2023
+Time=14:51:28.201000
+Type=Event
+Ack=0
+Num=46
+Code=100
+LinkedValue=8
+Title=09/06/2023,14:51:28.201000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 93]
+Date=09/06/2023
+Time=14:51:28.201000
+Type=Event
+Ack=0
+Num=47
+Code=101
+LinkedValue=0
+Title=09/06/2023,14:51:28.201000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 94]
+Date=09/06/2023
+Time=14:51:28.201000
+Type=Event
+Ack=0
+Num=48
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:51:28.201000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 95]
+Date=09/06/2023
+Time=14:50:26.779000
+Type=Event
+Ack=0
+Num=42
+Code=101
+LinkedValue=46
+Title=09/06/2023,14:50:26.779000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 96]
+Date=09/06/2023
+Time=14:50:25.777000
+Type=Event
+Ack=0
+Num=41
+Code=100
+LinkedValue=38
+Title=09/06/2023,14:50:25.777000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 97]
+Date=09/06/2023
+Time=14:50:24.777000
+Type=Event
+Ack=0
+Num=40
+Code=99
+LinkedValue=34
+Title=09/06/2023,14:50:24.777000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 98]
+Date=09/06/2023
+Time=14:50:22.777000
+Type=Event
+Ack=0
+Num=37
+Code=17
+LinkedValue=111
+Title=09/06/2023,14:50:22.777000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 99]
+Date=09/06/2023
+Time=14:50:22.777000
+Type=Event
+Ack=0
+Num=38
+Code=40
+LinkedValue=111
+Title=09/06/2023,14:50:22.777000 Event : tI> TRIP
+Line 001=Event Label : tI> TRIP
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 100]
+Date=09/06/2023
+Time=14:50:22.777000
+Type=Event
+Ack=0
+Num=39
+Code=50
+LinkedValue=23
+Title=09/06/2023,14:50:22.777000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 1 1 1
+Line 003=-  Logic output relay 1 (Trip) ......................1
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................1
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 101]
+Date=09/06/2023
+Time=14:50:22.777000
+Type=Fault
+Ack=0
+Num=193
+Code=3
+LinkedValue=7
+Title=09/06/2023,14:50:22.777000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.23875
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.19125
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.23875
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.1825
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 193
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 102]
+Date=09/06/2023
+Time=14:50:21.777000
+Type=Event
+Ack=0
+Num=35
+Code=9
+LinkedValue=47
+Title=09/06/2023,14:50:21.777000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 103]
+Date=09/06/2023
+Time=14:50:21.777000
+Type=Event
+Ack=0
+Num=36
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:50:21.777000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 104]
+Date=09/06/2023
+Time=14:50:21.647000
+Type=Event
+Ack=0
+Num=33
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:50:21.647000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 105]
+Date=09/06/2023
+Time=14:50:21.647000
+Type=Event
+Ack=0
+Num=34
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:50:21.647000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 106]
+Date=09/06/2023
+Time=14:50:21.632000
+Type=Event
+Ack=0
+Num=30
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:50:21.632000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 107]
+Date=09/06/2023
+Time=14:50:21.632000
+Type=Event
+Ack=0
+Num=31
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:50:21.632000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 108]
+Date=09/06/2023
+Time=14:50:21.632000
+Type=Event
+Ack=0
+Num=32
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:50:21.632000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 109]
+Date=09/06/2023
+Time=14:50:18.587000
+Type=Event
+Ack=0
+Num=29
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:50:18.587000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 110]
+Date=09/06/2023
+Time=14:50:18.365000
+Type=Event
+Ack=0
+Num=28
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:50:18.365000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 111]
+Date=09/06/2023
+Time=14:50:18.125000
+Type=Event
+Ack=0
+Num=27
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:50:18.125000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 112]
+Date=09/06/2023
+Time=14:50:17.885000
+Type=Event
+Ack=0
+Num=26
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:50:17.885000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 113]
+Date=09/06/2023
+Time=14:50:17.507000
+Type=Event
+Ack=0
+Num=25
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:50:17.507000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 114]
+Date=09/06/2023
+Time=14:50:16.032000
+Type=Event
+Ack=0
+Num=19
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:50:16.032000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 115]
+Date=09/06/2023
+Time=14:50:16.032000
+Type=Event
+Ack=0
+Num=20
+Code=17
+LinkedValue=0
+Title=09/06/2023,14:50:16.032000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 116]
+Date=09/06/2023
+Time=14:50:16.032000
+Type=Event
+Ack=0
+Num=21
+Code=99
+LinkedValue=12
+Title=09/06/2023,14:50:16.032000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 117]
+Date=09/06/2023
+Time=14:50:16.032000
+Type=Event
+Ack=0
+Num=22
+Code=100
+LinkedValue=8
+Title=09/06/2023,14:50:16.032000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 118]
+Date=09/06/2023
+Time=14:50:16.032000
+Type=Event
+Ack=0
+Num=23
+Code=101
+LinkedValue=0
+Title=09/06/2023,14:50:16.032000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 119]
+Date=09/06/2023
+Time=14:50:16.032000
+Type=Event
+Ack=0
+Num=24
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:50:16.032000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 120]
+Date=09/06/2023
+Time=14:50:15.283000
+Type=Event
+Ack=0
+Num=18
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:50:15.283000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 121]
+Date=09/06/2023
+Time=14:50:14.259000
+Type=Event
+Ack=0
+Num=17
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:50:14.259000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 122]
+Date=09/06/2023
+Time=14:50:13.984000
+Type=Event
+Ack=0
+Num=16
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:50:13.984000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 123]
+Date=09/06/2023
+Time=14:50:03.565000
+Type=Event
+Ack=0
+Num=15
+Code=101
+LinkedValue=46
+Title=09/06/2023,14:50:03.565000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 124]
+Date=09/06/2023
+Time=14:50:02.565000
+Type=Event
+Ack=0
+Num=14
+Code=100
+LinkedValue=38
+Title=09/06/2023,14:50:02.565000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 125]
+Date=09/06/2023
+Time=14:50:01.566000
+Type=Event
+Ack=0
+Num=13
+Code=99
+LinkedValue=34
+Title=09/06/2023,14:50:01.566000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 126]
+Date=09/06/2023
+Time=14:49:59.564000
+Type=Event
+Ack=0
+Num=10
+Code=17
+LinkedValue=111
+Title=09/06/2023,14:49:59.564000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 127]
+Date=09/06/2023
+Time=14:49:59.564000
+Type=Event
+Ack=0
+Num=11
+Code=40
+LinkedValue=111
+Title=09/06/2023,14:49:59.564000 Event : tI> TRIP
+Line 001=Event Label : tI> TRIP
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 128]
+Date=09/06/2023
+Time=14:49:59.564000
+Type=Event
+Ack=0
+Num=12
+Code=50
+LinkedValue=23
+Title=09/06/2023,14:49:59.564000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 1 1 1
+Line 003=-  Logic output relay 1 (Trip) ......................1
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................1
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 129]
+Date=09/06/2023
+Time=14:49:59.564000
+Type=Fault
+Ack=0
+Num=192
+Code=3
+LinkedValue=7
+Title=09/06/2023,14:49:59.564000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.24875
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.1925
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.24875
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.16625
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 192
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 130]
+Date=09/06/2023
+Time=14:49:58.564000
+Type=Event
+Ack=0
+Num=8
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:49:58.564000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 131]
+Date=09/06/2023
+Time=14:49:58.564000
+Type=Event
+Ack=0
+Num=9
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:49:58.564000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 132]
+Date=09/06/2023
+Time=14:49:58.444000
+Type=Event
+Ack=0
+Num=6
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:49:58.444000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 133]
+Date=09/06/2023
+Time=14:49:58.444000
+Type=Event
+Ack=0
+Num=7
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:49:58.444000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 134]
+Date=09/06/2023
+Time=14:49:58.426000
+Type=Event
+Ack=0
+Num=3
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:49:58.426000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 135]
+Date=09/06/2023
+Time=14:49:58.426000
+Type=Event
+Ack=0
+Num=4
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:49:58.426000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 136]
+Date=09/06/2023
+Time=14:49:58.426000
+Type=Event
+Ack=0
+Num=5
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:49:58.426000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 137]
+Date=09/06/2023
+Time=14:49:42.159000
+Type=Event
+Ack=0
+Num=1
+Code=101
+LinkedValue=0
+Title=09/06/2023,14:49:42.159000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 138]
+Date=09/06/2023
+Time=14:49:42.159000
+Type=Event
+Ack=0
+Num=2
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:49:42.159000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 139]
+Date=09/06/2023
+Time=14:49:42.159000
+Type=Event
+Ack=0
+Num=247
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:49:42.159000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 140]
+Date=09/06/2023
+Time=14:49:42.159000
+Type=Event
+Ack=0
+Num=248
+Code=17
+LinkedValue=0
+Title=09/06/2023,14:49:42.159000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 141]
+Date=09/06/2023
+Time=14:49:42.159000
+Type=Event
+Ack=0
+Num=249
+Code=99
+LinkedValue=12
+Title=09/06/2023,14:49:42.159000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 142]
+Date=09/06/2023
+Time=14:49:42.159000
+Type=Event
+Ack=0
+Num=250
+Code=100
+LinkedValue=8
+Title=09/06/2023,14:49:42.159000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 143]
+Date=09/06/2023
+Time=14:49:40.295000
+Type=Event
+Ack=0
+Num=246
+Code=101
+LinkedValue=46
+Title=09/06/2023,14:49:40.295000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 144]
+Date=09/06/2023
+Time=14:49:40.085000
+Type=Event
+Ack=0
+Num=245
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:49:40.085000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 145]
+Date=09/06/2023
+Time=14:49:39.295000
+Type=Event
+Ack=0
+Num=244
+Code=100
+LinkedValue=38
+Title=09/06/2023,14:49:39.295000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 146]
+Date=09/06/2023
+Time=14:49:38.293000
+Type=Event
+Ack=0
+Num=243
+Code=99
+LinkedValue=34
+Title=09/06/2023,14:49:38.293000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 147]
+Date=09/06/2023
+Time=14:49:36.293000
+Type=Event
+Ack=0
+Num=240
+Code=17
+LinkedValue=109
+Title=09/06/2023,14:49:36.293000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 148]
+Date=09/06/2023
+Time=14:49:36.293000
+Type=Event
+Ack=0
+Num=241
+Code=40
+LinkedValue=109
+Title=09/06/2023,14:49:36.293000 Event : tI> TRIP
+Line 001=Event Label : tI> TRIP
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 149]
+Date=09/06/2023
+Time=14:49:36.293000
+Type=Event
+Ack=0
+Num=242
+Code=50
+LinkedValue=23
+Title=09/06/2023,14:49:36.293000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 1 1 1
+Line 003=-  Logic output relay 1 (Trip) ......................1
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................1
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 150]
+Date=09/06/2023
+Time=14:49:36.293000
+Type=Fault
+Ack=0
+Num=191
+Code=3
+LinkedValue=6
+Title=09/06/2023,14:49:36.293000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.29875
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.00125
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.29875
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.21
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 191
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 151]
+Date=09/06/2023
+Time=14:49:35.293000
+Type=Event
+Ack=0
+Num=238
+Code=9
+LinkedValue=45
+Title=09/06/2023,14:49:35.293000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 152]
+Date=09/06/2023
+Time=14:49:35.293000
+Type=Event
+Ack=0
+Num=239
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:49:35.293000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 153]
+Date=09/06/2023
+Time=14:49:35.171000
+Type=Event
+Ack=0
+Num=236
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:49:35.171000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 154]
+Date=09/06/2023
+Time=14:49:35.171000
+Type=Event
+Ack=0
+Num=237
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:49:35.171000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 155]
+Date=09/06/2023
+Time=14:49:35.153000
+Type=Event
+Ack=0
+Num=233
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:49:35.153000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 156]
+Date=09/06/2023
+Time=14:49:35.153000
+Type=Event
+Ack=0
+Num=234
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:49:35.153000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 157]
+Date=09/06/2023
+Time=14:49:35.153000
+Type=Event
+Ack=0
+Num=235
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:49:35.153000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 158]
+Date=09/06/2023
+Time=14:49:31.771000
+Type=Event
+Ack=0
+Num=227
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:49:31.771000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 159]
+Date=09/06/2023
+Time=14:49:31.771000
+Type=Event
+Ack=0
+Num=228
+Code=17
+LinkedValue=0
+Title=09/06/2023,14:49:31.771000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 160]
+Date=09/06/2023
+Time=14:49:31.771000
+Type=Event
+Ack=0
+Num=229
+Code=99
+LinkedValue=12
+Title=09/06/2023,14:49:31.771000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 161]
+Date=09/06/2023
+Time=14:49:31.771000
+Type=Event
+Ack=0
+Num=230
+Code=100
+LinkedValue=8
+Title=09/06/2023,14:49:31.771000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 162]
+Date=09/06/2023
+Time=14:49:31.771000
+Type=Event
+Ack=0
+Num=231
+Code=101
+LinkedValue=0
+Title=09/06/2023,14:49:31.771000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 163]
+Date=09/06/2023
+Time=14:49:31.771000
+Type=Event
+Ack=0
+Num=232
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:49:31.771000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 164]
+Date=09/06/2023
+Time=14:23:35.935000
+Type=Event
+Ack=0
+Num=226
+Code=101
+LinkedValue=46
+Title=09/06/2023,14:23:35.935000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 165]
+Date=09/06/2023
+Time=14:23:35.795000
+Type=Event
+Ack=0
+Num=225
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:23:35.795000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 166]
+Date=09/06/2023
+Time=14:23:34.935000
+Type=Event
+Ack=0
+Num=224
+Code=100
+LinkedValue=38
+Title=09/06/2023,14:23:34.935000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 167]
+Date=09/06/2023
+Time=14:23:33.933000
+Type=Event
+Ack=0
+Num=223
+Code=99
+LinkedValue=34
+Title=09/06/2023,14:23:33.933000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 168]
+Date=09/06/2023
+Time=14:23:31.933000
+Type=Event
+Ack=0
+Num=220
+Code=17
+LinkedValue=109
+Title=09/06/2023,14:23:31.933000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 169]
+Date=09/06/2023
+Time=14:23:31.933000
+Type=Event
+Ack=0
+Num=221
+Code=40
+LinkedValue=109
+Title=09/06/2023,14:23:31.933000 Event : tI> TRIP
+Line 001=Event Label : tI> TRIP
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 170]
+Date=09/06/2023
+Time=14:23:31.933000
+Type=Event
+Ack=0
+Num=222
+Code=50
+LinkedValue=23
+Title=09/06/2023,14:23:31.933000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 1 1 1
+Line 003=-  Logic output relay 1 (Trip) ......................1
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................1
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 171]
+Date=09/06/2023
+Time=14:23:31.933000
+Type=Fault
+Ack=0
+Num=190
+Code=3
+LinkedValue=6
+Title=09/06/2023,14:23:31.933000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.28625
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.00625
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.28625
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.205
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 190
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 172]
+Date=09/06/2023
+Time=14:23:30.933000
+Type=Event
+Ack=0
+Num=218
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:23:30.933000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 173]
+Date=09/06/2023
+Time=14:23:30.933000
+Type=Event
+Ack=0
+Num=219
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:23:30.933000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 174]
+Date=09/06/2023
+Time=14:23:30.811000
+Type=Event
+Ack=0
+Num=216
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:23:30.811000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 175]
+Date=09/06/2023
+Time=14:23:30.811000
+Type=Event
+Ack=0
+Num=217
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:23:30.811000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 176]
+Date=09/06/2023
+Time=14:23:30.793000
+Type=Event
+Ack=0
+Num=213
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:23:30.793000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 177]
+Date=09/06/2023
+Time=14:23:30.793000
+Type=Event
+Ack=0
+Num=214
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:23:30.793000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 178]
+Date=09/06/2023
+Time=14:23:30.793000
+Type=Event
+Ack=0
+Num=215
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:23:30.793000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 179]
+Date=09/06/2023
+Time=14:23:29.124000
+Type=Event
+Ack=0
+Num=212
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:23:29.124000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 180]
+Date=09/06/2023
+Time=14:23:28.926000
+Type=Event
+Ack=0
+Num=211
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:23:28.926000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 181]
+Date=09/06/2023
+Time=14:23:28.721000
+Type=Event
+Ack=0
+Num=210
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:23:28.721000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 182]
+Date=09/06/2023
+Time=14:23:28.509000
+Type=Event
+Ack=0
+Num=209
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:23:28.509000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 183]
+Date=09/06/2023
+Time=14:23:28.289000
+Type=Event
+Ack=0
+Num=208
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:23:28.289000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 184]
+Date=09/06/2023
+Time=14:23:24.381000
+Type=Event
+Ack=0
+Num=202
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:23:24.381000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 185]
+Date=09/06/2023
+Time=14:23:24.381000
+Type=Event
+Ack=0
+Num=203
+Code=17
+LinkedValue=0
+Title=09/06/2023,14:23:24.381000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 186]
+Date=09/06/2023
+Time=14:23:24.381000
+Type=Event
+Ack=0
+Num=204
+Code=99
+LinkedValue=12
+Title=09/06/2023,14:23:24.381000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 187]
+Date=09/06/2023
+Time=14:23:24.381000
+Type=Event
+Ack=0
+Num=205
+Code=100
+LinkedValue=8
+Title=09/06/2023,14:23:24.381000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 188]
+Date=09/06/2023
+Time=14:23:24.381000
+Type=Event
+Ack=0
+Num=206
+Code=101
+LinkedValue=0
+Title=09/06/2023,14:23:24.381000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 189]
+Date=09/06/2023
+Time=14:23:24.381000
+Type=Event
+Ack=0
+Num=207
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:23:24.381000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 190]
+Date=09/06/2023
+Time=14:21:32.673000
+Type=Event
+Ack=0
+Num=201
+Code=101
+LinkedValue=46
+Title=09/06/2023,14:21:32.673000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 191]
+Date=09/06/2023
+Time=14:21:32.556000
+Type=Event
+Ack=0
+Num=200
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:21:32.556000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 192]
+Date=09/06/2023
+Time=14:21:31.674000
+Type=Event
+Ack=0
+Num=199
+Code=100
+LinkedValue=38
+Title=09/06/2023,14:21:31.674000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 193]
+Date=09/06/2023
+Time=14:21:30.672000
+Type=Event
+Ack=0
+Num=198
+Code=99
+LinkedValue=34
+Title=09/06/2023,14:21:30.672000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 194]
+Date=09/06/2023
+Time=14:21:28.672000
+Type=Event
+Ack=0
+Num=195
+Code=17
+LinkedValue=109
+Title=09/06/2023,14:21:28.672000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 195]
+Date=09/06/2023
+Time=14:21:28.672000
+Type=Event
+Ack=0
+Num=196
+Code=40
+LinkedValue=109
+Title=09/06/2023,14:21:28.672000 Event : tI> TRIP
+Line 001=Event Label : tI> TRIP
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 196]
+Date=09/06/2023
+Time=14:21:28.672000
+Type=Event
+Ack=0
+Num=197
+Code=50
+LinkedValue=23
+Title=09/06/2023,14:21:28.672000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 1 1 1
+Line 003=-  Logic output relay 1 (Trip) ......................1
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................1
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 197]
+Date=09/06/2023
+Time=14:21:28.672000
+Type=Fault
+Ack=0
+Num=189
+Code=3
+LinkedValue=6
+Title=09/06/2023,14:21:28.672000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.2925
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.00125
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.2925
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.19875
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 189
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 198]
+Date=09/06/2023
+Time=14:21:27.668000
+Type=Event
+Ack=0
+Num=193
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:21:27.668000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 199]
+Date=09/06/2023
+Time=14:21:27.668000
+Type=Event
+Ack=0
+Num=194
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:21:27.668000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 200]
+Date=09/06/2023
+Time=14:21:27.545000
+Type=Event
+Ack=0
+Num=191
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:21:27.545000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 201]
+Date=09/06/2023
+Time=14:21:27.545000
+Type=Event
+Ack=0
+Num=192
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:21:27.545000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 202]
+Date=09/06/2023
+Time=14:21:27.528000
+Type=Event
+Ack=0
+Num=188
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:21:27.528000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 203]
+Date=09/06/2023
+Time=14:21:27.528000
+Type=Event
+Ack=0
+Num=189
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:21:27.528000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 204]
+Date=09/06/2023
+Time=14:21:27.528000
+Type=Event
+Ack=0
+Num=190
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:21:27.528000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 205]
+Date=09/06/2023
+Time=14:21:26.358000
+Type=Event
+Ack=0
+Num=187
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:21:26.358000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 206]
+Date=09/06/2023
+Time=14:21:26.195000
+Type=Event
+Ack=0
+Num=186
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:21:26.195000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 207]
+Date=09/06/2023
+Time=14:21:26.023000
+Type=Event
+Ack=0
+Num=185
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:21:26.023000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 208]
+Date=09/06/2023
+Time=14:21:25.840000
+Type=Event
+Ack=0
+Num=184
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:21:25.840000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 209]
+Date=09/06/2023
+Time=14:21:24.965000
+Type=Event
+Ack=0
+Num=183
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:21:24.965000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 210]
+Date=09/06/2023
+Time=14:21:21.980000
+Type=Event
+Ack=0
+Num=177
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:21:21.980000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 211]
+Date=09/06/2023
+Time=14:21:21.980000
+Type=Event
+Ack=0
+Num=178
+Code=17
+LinkedValue=0
+Title=09/06/2023,14:21:21.980000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 212]
+Date=09/06/2023
+Time=14:21:21.980000
+Type=Event
+Ack=0
+Num=179
+Code=99
+LinkedValue=12
+Title=09/06/2023,14:21:21.980000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 213]
+Date=09/06/2023
+Time=14:21:21.980000
+Type=Event
+Ack=0
+Num=180
+Code=100
+LinkedValue=8
+Title=09/06/2023,14:21:21.980000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 214]
+Date=09/06/2023
+Time=14:21:21.980000
+Type=Event
+Ack=0
+Num=181
+Code=101
+LinkedValue=0
+Title=09/06/2023,14:21:21.980000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 215]
+Date=09/06/2023
+Time=14:21:21.980000
+Type=Event
+Ack=0
+Num=182
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:21:21.980000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 216]
+Date=09/06/2023
+Time=14:19:58.948000
+Type=Event
+Ack=0
+Num=176
+Code=101
+LinkedValue=46
+Title=09/06/2023,14:19:58.948000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 217]
+Date=09/06/2023
+Time=14:19:58.823000
+Type=Event
+Ack=0
+Num=175
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:19:58.823000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 218]
+Date=09/06/2023
+Time=14:19:57.948000
+Type=Event
+Ack=0
+Num=174
+Code=100
+LinkedValue=38
+Title=09/06/2023,14:19:57.948000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 219]
+Date=09/06/2023
+Time=14:19:56.947000
+Type=Event
+Ack=0
+Num=173
+Code=99
+LinkedValue=34
+Title=09/06/2023,14:19:56.947000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 220]
+Date=09/06/2023
+Time=14:19:54.947000
+Type=Event
+Ack=0
+Num=170
+Code=17
+LinkedValue=109
+Title=09/06/2023,14:19:54.947000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 221]
+Date=09/06/2023
+Time=14:19:54.947000
+Type=Event
+Ack=0
+Num=171
+Code=40
+LinkedValue=109
+Title=09/06/2023,14:19:54.947000 Event : tI> TRIP
+Line 001=Event Label : tI> TRIP
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 222]
+Date=09/06/2023
+Time=14:19:54.947000
+Type=Event
+Ack=0
+Num=172
+Code=50
+LinkedValue=23
+Title=09/06/2023,14:19:54.947000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 1 1 1
+Line 003=-  Logic output relay 1 (Trip) ......................1
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................1
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 223]
+Date=09/06/2023
+Time=14:19:54.947000
+Type=Fault
+Ack=0
+Num=188
+Code=3
+LinkedValue=6
+Title=09/06/2023,14:19:54.947000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.2975
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.00125
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.2975
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.19625
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 188
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 224]
+Date=09/06/2023
+Time=14:19:53.949000
+Type=Event
+Ack=0
+Num=168
+Code=9
+LinkedValue=45
+Title=09/06/2023,14:19:53.949000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 225]
+Date=09/06/2023
+Time=14:19:53.949000
+Type=Event
+Ack=0
+Num=169
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:19:53.949000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 226]
+Date=09/06/2023
+Time=14:19:53.826000
+Type=Event
+Ack=0
+Num=166
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:19:53.826000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 227]
+Date=09/06/2023
+Time=14:19:53.826000
+Type=Event
+Ack=0
+Num=167
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:19:53.826000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 228]
+Date=09/06/2023
+Time=14:19:53.808000
+Type=Event
+Ack=0
+Num=163
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:19:53.808000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 229]
+Date=09/06/2023
+Time=14:19:53.808000
+Type=Event
+Ack=0
+Num=164
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:19:53.808000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 230]
+Date=09/06/2023
+Time=14:19:53.808000
+Type=Event
+Ack=0
+Num=165
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:19:53.808000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 231]
+Date=09/06/2023
+Time=14:19:52.246000
+Type=Event
+Ack=0
+Num=162
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:19:52.246000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 232]
+Date=09/06/2023
+Time=14:19:51.901000
+Type=Event
+Ack=0
+Num=161
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:19:51.901000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 233]
+Date=09/06/2023
+Time=14:19:51.718000
+Type=Event
+Ack=0
+Num=160
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:19:51.718000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 234]
+Date=09/06/2023
+Time=14:19:51.531000
+Type=Event
+Ack=0
+Num=159
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:19:51.531000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 235]
+Date=09/06/2023
+Time=14:19:51.291000
+Type=Event
+Ack=0
+Num=158
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:19:51.291000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 236]
+Date=09/06/2023
+Time=14:19:41.431000
+Type=Event
+Ack=0
+Num=152
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:19:41.431000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 237]
+Date=09/06/2023
+Time=14:19:41.431000
+Type=Event
+Ack=0
+Num=153
+Code=17
+LinkedValue=0
+Title=09/06/2023,14:19:41.431000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 238]
+Date=09/06/2023
+Time=14:19:41.431000
+Type=Event
+Ack=0
+Num=154
+Code=99
+LinkedValue=12
+Title=09/06/2023,14:19:41.431000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 239]
+Date=09/06/2023
+Time=14:19:41.431000
+Type=Event
+Ack=0
+Num=155
+Code=100
+LinkedValue=8
+Title=09/06/2023,14:19:41.431000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 240]
+Date=09/06/2023
+Time=14:19:41.431000
+Type=Event
+Ack=0
+Num=156
+Code=101
+LinkedValue=0
+Title=09/06/2023,14:19:41.431000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 241]
+Date=09/06/2023
+Time=14:19:41.431000
+Type=Event
+Ack=0
+Num=157
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:19:41.431000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 242]
+Date=09/06/2023
+Time=14:15:23.675000
+Type=Event
+Ack=0
+Num=151
+Code=101
+LinkedValue=46
+Title=09/06/2023,14:15:23.675000 Event : tEQUATION C
+Line 001=Event Label : tEQUATION C
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 243]
+Date=09/06/2023
+Time=14:15:23.572000
+Type=Event
+Ack=0
+Num=150
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:15:23.572000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 244]
+Date=09/06/2023
+Time=14:15:22.674000
+Type=Event
+Ack=0
+Num=149
+Code=100
+LinkedValue=38
+Title=09/06/2023,14:15:22.674000 Event : tEQUATION B
+Line 001=Event Label : tEQUATION B
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 245]
+Date=09/06/2023
+Time=14:15:21.675000
+Type=Event
+Ack=0
+Num=148
+Code=99
+LinkedValue=34
+Title=09/06/2023,14:15:21.675000 Event : tEQUATION A
+Line 001=Event Label : tEQUATION A
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 246]
+Date=09/06/2023
+Time=14:15:19.674000
+Type=Event
+Ack=0
+Num=145
+Code=17
+LinkedValue=109
+Title=09/06/2023,14:15:19.674000 Event : tI>
+Line 001=Event Label : tI>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 247]
+Date=09/06/2023
+Time=14:15:19.674000
+Type=Event
+Ack=0
+Num=146
+Code=40
+LinkedValue=109
+Title=09/06/2023,14:15:19.674000 Event : tI> TRIP
+Line 001=Event Label : tI> TRIP
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 248]
+Date=09/06/2023
+Time=14:15:19.674000
+Type=Event
+Ack=0
+Num=147
+Code=50
+LinkedValue=23
+Title=09/06/2023,14:15:19.674000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 1 1 1
+Line 003=-  Logic output relay 1 (Trip) ......................1
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................1
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 249]
+Date=09/06/2023
+Time=14:15:19.674000
+Type=Fault
+Ack=0
+Num=187
+Code=3
+LinkedValue=6
+Title=09/06/2023,14:15:19.674000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.28875
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.00125
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.28875
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.21375
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 187
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 250]
+Date=09/06/2023
+Time=14:15:18.675000
+Type=Event
+Ack=0
+Num=143
+Code=9
+LinkedValue=45
+Title=09/06/2023,14:15:18.675000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 251]
+Date=09/06/2023
+Time=14:15:18.675000
+Type=Event
+Ack=0
+Num=144
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:15:18.675000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 252]
+Date=09/06/2023
+Time=14:15:18.553000
+Type=Event
+Ack=0
+Num=141
+Code=9
+LinkedValue=0
+Title=09/06/2023,14:15:18.553000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 253]
+Date=09/06/2023
+Time=14:15:18.553000
+Type=Event
+Ack=0
+Num=142
+Code=50
+LinkedValue=16
+Title=09/06/2023,14:15:18.553000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 0 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................0
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 254]
+Date=09/06/2023
+Time=14:15:18.535000
+Type=Event
+Ack=0
+Num=138
+Code=9
+LinkedValue=37
+Title=09/06/2023,14:15:18.535000 Event : I>
+Line 001=Event Label : I>
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=4
+FileType=0
+
+
+[Event 255]
+Date=09/06/2023
+Time=14:15:18.535000
+Type=Event
+Ack=0
+Num=139
+Code=50
+LinkedValue=18
+Title=09/06/2023,14:15:18.535000 Event : RELAY COMMAND
+Line 001=Event Label : RELAY COMMAND
+Line 002=Linked Value : 0 0 0 0 1 0 0 1 0
+Line 003=-  Logic output relay 1 (Trip) ......................0
+Line 004=-  Logic output relay 2 .............................1
+Line 005=-  Logic output relay 3 .............................0
+Line 006=-  Logic output relay 4 .............................0
+Line 007=-  Logic output relay 0 (Watchdog) ..................1
+Line 008=-  Logic output relay 5 .............................0
+Line 009=-  Logic output relay 6 .............................0
+Line 010=-  Logic output relay 7 .............................0
+Line 011=-  Logic output relay 8 .............................0
+Line 012=Acknowledgment : Not acknowleged
+LineCount=12
+Filter=2
+FileType=0
+
+
+[Event 256]
+Date=09/06/2023
+Time=14:15:18.535000
+Type=Event
+Ack=0
+Num=140
+Code=3
+LinkedValue=2
+Title=09/06/2023,14:15:18.535000 Event : DISTURBANCE RECORDING START
+Line 001=Event Label : DISTURBANCE RECORDING START
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=0
+FileType=0
+
+
+[Event 257]
+Date=09/06/2023
+Time=14:15:15.790000
+Type=Event
+Ack=0
+Num=137
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:15:15.790000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 258]
+Date=09/06/2023
+Time=14:15:15.605000
+Type=Event
+Ack=0
+Num=136
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:15:15.605000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 259]
+Date=09/06/2023
+Time=14:15:15.410000
+Type=Event
+Ack=0
+Num=135
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:15:15.410000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 260]
+Date=09/06/2023
+Time=14:15:15.198000
+Type=Event
+Ack=0
+Num=134
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:15:15.198000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 261]
+Date=09/06/2023
+Time=14:15:14.780000
+Type=Event
+Ack=0
+Num=133
+Code=51
+LinkedValue=0
+Title=09/06/2023,14:15:14.780000 Event : ACK. OF FIRST ALARM (push button)
+Line 001=Event Label : ACK. OF FIRST ALARM (push button)
+Line 002=Acknowledgment : Not acknowleged
+LineCount=2
+Filter=7
+FileType=0
+
+
+[Event 262]
+Date=09/06/2023
+Time=14:13:53.175000
+Type=Fault
+Ack=0
+Num=186
+Code=3
+LinkedValue=7
+Title=09/06/2023,14:13:53.175000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.25375
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.12875
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.25375
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.19375
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 186
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 263]
+Date=09/06/2023
+Time=14:12:15.699000
+Type=Fault
+Ack=0
+Num=185
+Code=3
+LinkedValue=7
+Title=09/06/2023,14:12:15.699000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.245
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.1825
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.245
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.1775
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 185
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 264]
+Date=09/06/2023
+Time=14:03:29.831000
+Type=Fault
+Ack=0
+Num=184
+Code=3
+LinkedValue=6
+Title=09/06/2023,14:03:29.831000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.2925
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.00125
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.2925
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.21125
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 184
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 265]
+Date=09/06/2023
+Time=13:50:27.848000
+Type=Fault
+Ack=0
+Num=183
+Code=3
+LinkedValue=6
+Title=09/06/2023,13:50:27.848000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.3075
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.00125
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.3075
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.18625
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 183
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 266]
+Date=09/06/2023
+Time=13:26:23.473000
+Type=Fault
+Ack=0
+Num=182
+Code=3
+LinkedValue=7
+Title=09/06/2023,13:26:23.473000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.25125
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.1775
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.25125
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.16
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 182
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 267]
+Date=09/06/2023
+Time=13:07:44.445000
+Type=Fault
+Ack=0
+Num=181
+Code=3
+LinkedValue=6
+Title=09/06/2023,13:07:44.445000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.31375
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.00125
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.31375
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.15875
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 181
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 268]
+Date=09/06/2023
+Time=13:02:11.351000
+Type=Fault
+Ack=0
+Num=180
+Code=3
+LinkedValue=7
+Title=09/06/2023,13:02:11.351000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.26625
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.2
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.26625
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.11
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 180
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 269]
+Date=09/06/2023
+Time=13:00:08.243000
+Type=Fault
+Ack=0
+Num=179
+Code=3
+LinkedValue=7
+Title=09/06/2023,13:00:08.243000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.26
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.15125
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.26
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.1725
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 179
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 270]
+Date=09/06/2023
+Time=12:55:13.954000
+Type=Fault
+Ack=0
+Num=178
+Code=3
+LinkedValue=6
+Title=09/06/2023,12:55:13.954000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.30375
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.00125
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.30375
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.19125
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 178
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 271]
+Date=09/06/2023
+Time=12:51:02.684000
+Type=Fault
+Ack=0
+Num=177
+Code=3
+LinkedValue=7
+Title=09/06/2023,12:51:02.684000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.25875
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.175
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.25875
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.145
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 177
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 272]
+Date=09/06/2023
+Time=11:23:00.566000
+Type=Fault
+Ack=0
+Num=176
+Code=3
+LinkedValue=7
+Title=09/06/2023,11:23:00.566000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.27625
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.13875
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.27625
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.1175
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 176
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 273]
+Date=09/06/2023
+Time=11:20:13.829000
+Type=Fault
+Ack=0
+Num=175
+Code=3
+LinkedValue=6
+Title=09/06/2023,11:20:13.829000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.31625
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.00125
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.31625
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.1375
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 175
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 274]
+Date=09/06/2023
+Time=11:12:34.903000
+Type=Fault
+Ack=0
+Num=174
+Code=3
+LinkedValue=7
+Title=09/06/2023,11:12:34.903000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.26375
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.135
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.26375
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.16625
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 174
+LineCount =10
+Filter =5
+Filter =0
+
+
+[Event 275]
+Date=09/06/2023
+Time=11:09:05.119000
+Type=Fault
+Ack=0
+Num=173
+Code=3
+LinkedValue=6
+Title=09/06/2023,11:09:05.119000 Fault : tI>
+Line 001=Fault Type : tI>
+Line 002=Faulty Phase : Phase C
+Line 003=Magnitudes : 
+Line 004=-  Fault Magnitude Value ............................... 0.28125
+Line 005=-  Phase A Magnitude (RMS) ............................. 0.1
+Line 006=-  Phase B Magnitude (RMS) ............................. 0.28125
+Line 007=-  Phase C Magnitude (RMS) ............................. 0.14375
+Line 008=-  Earth/Ground Magnitude (RMS) ........................ 0
+Line 009=Active Configuration Group : 1
+Line 010=Fault Number : 173
+LineCount =10
+Filter =5
+Filter =0
+
+
