@@ -68,15 +68,18 @@ class Device extends CI_Controller {
 				'notif'=>$this->user_notif($user),
 				'id_product'=>$id_product,
 				'pemetaan'=>$this->Device_model->get_map($user), 
+				'monitor'=>$this->monitor_data($code) 
 
 			);
 	
 			$this->load->view('header',$data);
 			$this->load->view('device',$Sensor); // Menampilkan halaman utama admin
 		// }
-
-	
 		
+	}
+	public function monitor_data($code){
+		$qry ="select * FROM im_mon a inner join device_list_perdevice b on a.id_device =b.id_device ORDER BY a.pos_all ";
+		return $this->db->query($qry)->result();
 	}
 
 	public function baca_data($id_product)

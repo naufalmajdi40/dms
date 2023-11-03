@@ -1,5 +1,6 @@
 <!-------------------------------------------------------*/
-/* Copyright   : Amin Rusydi                            */
+/* Copyright   : Amin Rusydi                             */
+/* Hayooooooooooo Ngintip ajah nih.......               */
 /*-------------------------------------------------------->
 <?php
 	ini_set('display_errors', '0');
@@ -10,18 +11,19 @@
 
     <section class="content-header">
 
-<!-- <script src="<?php //echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"> defer</script>    
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
-<!-- 
+
+<script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script>
+<script src="<?php echo base_url('assets/bower_components/grafik/jquery-latest.js')?>"></script>
+
 <script type="text/javascript">
-    //setInterval("cuacaUpdate();",2000); 
+    setInterval("cuacaUpdate();",2000); 
     function cuacaUpdate(){
       $('#refreshh').load(location.href + ' #updateTable');
     }
-  </script> -->
+  </script>
 
-<!-- <script type="text/javascript">
-    //setInterval("scriptUpdate();",2000); 
+<script type="text/javascript">
+    setInterval("scriptUpdate();",2000); 
     function scriptUpdate(){
       $('#refresh').load(location.href + ' #update');
       // $('#refreshh').load(location.href + ' #updatee');
@@ -29,9 +31,7 @@
       $("#responsecontainer").load("<?php echo base_url().'chart/index/'.$kode_mesin ?>");
       $("#pie").load("<?php echo base_url().'pie'; ?>");
     }
-  </script> -->
-  
-
+  </script>
 
   
 
@@ -137,64 +137,8 @@
           <!-- /.box -->
         </div>
           </div>
-           <!-- //////////////////////data monitor cuy/////////////// -->
-    <p id="monitorData" hidden><?php echo JSON_encode( $monitor);?></p>
-     <div id="drag" class=" col-lg-12" style="display:flex;flex-wrap:wrap;flex-direction: row" >
-      <?php  
-      foreach ($monitor  as $dt) {
-        $type ="xx";
-        if($dt->port_type=="0"){
-          $type="Modbus";
-        }
-        else if($dt->port_type=="1"){
-          $type="TCP-IP";
-        }
-        if($dt->port_type=="2"){
-          $type="IEC61850";
-        }
-        ?>
-      <div class="col-lg-3">
-        <div class="info-box" style="border-radius: 10px;">
-           <span class="info-box-icon" style="background-color: white; border-radius: 10px; padding-top:20px; padding-left:10px;">
-            <!-- <div id="perMDCA" class="gauge" style="width: 70px; --rotation:0deg; --color:#5cb85c; --background:#e9ecef;"> -->
-            <!-- ${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias} -->
-        <?php 
-          if($dt->data_type=="boolean"){
-            echo '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="lampu l-second" style="width: 50px;height: 50px;">';
-          }
-          else if($dt->data_type=="float"||$dt->data_type=="integer"){
-            echo  '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="gauge" style="width: 70px; --rotation:0deg; --color:#5cb85c; --background:#e9ecef;">';
-          }
-          else if($dt->data_type=="utc-time"){
-            echo '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="	text-primary" style="width: 50px;height: 50px;margin-top:-20px;margin-left:10px;"><i class="far fa-clock " ></i>';
-          }
-          else if($dt->data_type=="visible-string"){
-            echo '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="	text-success" style="width: 50px;height: 50px;margin-top:-20px;margin-left:10px;"><i class="fas fa-info " ></i>';
-          }
 
-            ?>
-                     
-            <div class="percentage"></div>
-              <div class="mask"></div>
-              <span class="value"></span>
-            </div>
-          </span>
-          
-    
-          <div class="info-box-content">
-            <span class="info-box-text"><?php echo $dt->name; ?></span>
-            <span class="label label-success"><?php echo $dt->type; ?></span> <span class="label label-success"><?php echo $type;?> </span>
-            <span class="info-box-number" id="<?php echo 'val_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias  ?>">0</span>
-          </div>
-          <!-- /.info-box-content -->
-        </div>
-        <!-- /.info-box -->
-      </div>
-    <?php }?> 
-  
-        </div> 
-      <!-- -----------------------------end  data monitor---------------------------------------     -->
-   
+    <div> </div>
   <!-- TABLE: LATEST ORDERS -->
   <div id="refresh"  class="row">
  
@@ -355,42 +299,36 @@
 
 
 <!-- jQuery 3 -->
-
-<!-- <script src="<?php //echo base_url('assets/bower_components/jquery/dist/jquery.min.js')?>"></script> -->
+<script src="<?php echo base_url('assets/bower_components/jquery/dist/jquery.min.js')?>"></script>
 <!-- Bootstrap 3.3.7 -->
-<!-- <script src="<?php // echo base_url('assets/bower_components/bootstrap/dist/js/bootstrap.min.js')?>"></script>
+<script src="<?php echo base_url('assets/bower_components/bootstrap/dist/js/bootstrap.min.js')?>"></script>
 <!-- SlimScroll -->
-<script src="<?php //echo base_url('assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js')?>"></script>
-<!-- FastClick
-<script src="<?php //echo base_url('assets/bower_components/fastclick/lib/fastclick.js')?>"></script> -->
+<script src="<?php echo base_url('assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js')?>"></script>
+<!-- FastClick -->
+<script src="<?php echo base_url('assets/bower_components/fastclick/lib/fastclick.js')?>"></script>
 
-<!-- 
-<script src="assets/bower_components/select2/dist/js/select2.full.min.js"></script> -->
+
+<script src="assets/bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- InputMask -->
-<!-- <script src="assets/plugins/input-mask/jquery.inputmask.js"></script>
+<script src="assets/plugins/input-mask/jquery.inputmask.js"></script>
 <script src="assets/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="assets/plugins/input-mask/jquery.inputmask.extensions.js"></script> -->
+<script src="assets/plugins/input-mask/jquery.inputmask.extensions.js"></script>
 
-<!-- <script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js"></script>
-<script src="<?php echo base_url('assets/js/data-mqtt.js') ?>"></script>
-  <!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
- <script src="<?php echo base_url('assets/bower_components/chart.js/Chart.js')?>"></script>
-<script src="<?php  echo base_url('assets/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js')?>"></script>
+
+
+<script src="<?php echo base_url('assets/bower_components/chart.js/Chart.js')?>"></script>
+<script src="<?php echo base_url('assets/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js')?>"></script>
 
 <script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script>
 <script src="<?php echo base_url('assets/bower_components/grafik/jquery-latest.js')?>"></script>
-<script src="<?php echo base_url('assets/bower_components/grafik/mdb.min.js')?>"></script> 
-<script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script>
-
-
-
-<script src="<?php echo base_url('assets/js/adminlte.min.js') ?>"></script> -->
-
+<script src="<?php echo base_url('assets/bower_components/grafik/mdb.min.js')?>"></script>
 
 
 <!-- AdminLTE for demo purposes -->
 <!-- AdminLTE App -->
+<script src="<?php echo base_url('assets/js/adminlte.min.js')?>"></script>
+
+<script src="<?php echo base_url('assets/js/adminlte.min.js')?>"></script>
 
 <script>
   var HubIcon = L.Icon.extend({
@@ -459,30 +397,13 @@ var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-
 			.addTo(map);
 
 	<?php }  ?>
+</script>
 
+
+<script>
   $(document).ready(function () {
-    //$('.sidebar-menu').tree()
-    startConnect();
-    $("#drag").sortable({
-      update: function(event, ui) {           
-        let ids = $(this).children().get().map(function(el) {
-        distance: 5
-          return el.id
-              }).join(",");
-
-                console.log(ids)
-                $.get( "updPosition2?data="+ids)
-                    .done(function(data) {  
-                     console.log(data)
-                 });
-                 
-                }
-     });
-    
+    $('.sidebar-menu').tree()
   })
-
-
-
 </script>
 
 </body>

@@ -67,12 +67,12 @@ class Mon_model extends CI_Model{
         $qrydel= "delete from im_mon where machine_code="."'".$dtJson[0]->machine_code."';";
         $qrydel2= "delete from device_list_perdevice where machine_code="."'".$dtJson[0]->machine_code."';";
         
-        $qry="INSERT INTO im_mon(domain_id,item_id,active,id_device,alias,name,machine_code,type,port_type,data_type) values";
+        $qry="INSERT INTO im_mon(domain_id,item_id,active,id_device,alias,name,machine_code,type,port_type,data_type,max_value) values";
         $qry2 ="INSERT INTO device_list_perdevice(machine_code,id_device,type,port_type,rack_location) values";
         $val="";
         $val2="";
         for ($i=0;$i<count($dtJson);$i++){
-            $val.="('".$dtJson[$i]->domain_id."','".$dtJson[$i]->item_id."',1,".$dtJson[$i]->id_device.",'".$dtJson[$i]->alias."','".$dtJson[$i]->name."','".$dtJson[$i]->machine_code."','".$dtJson[$i]->relaytype."','".$dtJson[$i]->port_type."','".$dtJson[$i]->data_type."')";
+            $val.="('".$dtJson[$i]->domain_id."','".$dtJson[$i]->item_id."',1,".$dtJson[$i]->id_device.",'".$dtJson[$i]->alias."','".$dtJson[$i]->name."','".$dtJson[$i]->machine_code."','".$dtJson[$i]->relaytype."','".$dtJson[$i]->port_type."','".$dtJson[$i]->data_type."',".$dtJson[$i]->max_value.")";
             if($i<count($dtJson)-1){
                 $val.=",";
             }
@@ -94,7 +94,7 @@ class Mon_model extends CI_Model{
             return 1;
         }
         else{
-            return 2;
+            return $qry;
         }
        //return $this->db->query($qry2);
     }

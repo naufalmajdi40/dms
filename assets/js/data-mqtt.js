@@ -49,14 +49,14 @@ function onMessageArrived(message) {
     // console.log("OnMessageArrived: " + message.payloadString);
 
     dataMon = JSON.parse($('#monitorData').text())
-    console.log(dataMon)
+        // console.log(dataMon)
     parsemsg = JSON.parse(message.payloadString)
     parseDest = message.destinationName.split("/")
     machine_code = (parseDest[1])
     id_device = (parseDest[3])
     item_id = (parseDest[4])
     alias = parsemsg.alias
-    console.log(parseDest)
+        //console.log(parseDest)
 
     for (let i = 0; i < dataMon.length; i++) {
         if (dataMon[i].id_device == id_device && dataMon[i].machine_code == machine_code && dataMon[i].alias == alias) {
@@ -68,7 +68,10 @@ function onMessageArrived(message) {
                     val = parseInt(parsemsg.val)
                     $(`#val_${machine_code}_${id_device}_${alias}`).text(val)
                 }
-                const deg = (val / 100) * 180;
+                max_val = dataMon[i].max_val
+                    //console.log(dataMon[i].max_val)
+
+                const deg = (val / max_val) * 180;
                 try {
                     document
                         .getElementById(`dt_${machine_code}_${id_device}_${alias}`)

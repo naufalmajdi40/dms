@@ -24,6 +24,27 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url('assets/css/AdminLTE.min.css') ?>">
   <link rel="stylesheet" href="<?php echo base_url('assets/css/custom-css/grafik.css') ?>">
+  <!-- custom style -->
+  <style>
+    .lampu{
+      
+      border-radius:100%;
+      border:5px solid silver;
+      margin-left:10px;
+    }
+    .l-second{
+      background-color:black;
+    
+
+    }
+    .l-red{
+      background-color:#dc3545;
+      box-shadow: 0px 0px 5px 0px #dc3545;
+    
+    }
+    </style>
+
+
     <!-- Datatables -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">

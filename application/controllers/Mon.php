@@ -117,12 +117,15 @@ class Mon extends CI_controller{
          $data=$this->input->post('dt');
          $data2=$this->input->post('device');
        //  $dt=var_dump($data);
+        
          $res['data']=$this->Mon_model->insert_mon_all($data,$data2);
         if($res['data']){
+            //echo $data;
             echo json_encode(
                 array(
                     'success' => true,
-                    'message' => 'Sync Data Success',
+                    'message' => 'Sync Data Success'
+                    
                 
                 )
             );

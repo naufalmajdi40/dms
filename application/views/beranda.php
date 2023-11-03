@@ -8,37 +8,16 @@ ini_set('error_reporting', E_ALL);
 
 
 ?>
-<style>
-.lampu{
-  
-  border-radius:100%;
-  border:5px solid silver;
-  margin-left:10px;
-}
-.l-second{
-  background-color:black;
- 
 
-}
-.l-red{
-  background-color:#dc3545;
-  box-shadow: 0px 0px 5px 0px #dc3545;
- 
-}
-
-
-
-
-</style>
 <!-- Content Header (Page header) -->
 
 <section class="content-header">
 
 
-  <script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js') ?>"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js"></script>
-  <script src="<?php echo base_url('assets/js/data-mqtt.js') ?>"></script>
+<script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js') ?>"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js"></script>
+<script src="<?php echo base_url('assets/js/data-mqtt.js') ?>"></script>
 
 
 
@@ -474,10 +453,6 @@ ini_set('error_reporting', E_ALL);
 
     <?php date_default_timezone_set('Asia/Jakarta');
     $tanggal = date('Y-m-d');
-
-
-
-
 
     foreach ($pemetaan as $value) {
       foreach ($result as $a => $hasil) {
