@@ -46,7 +46,7 @@
         <!--  device content -->
       <?php $no=1;
         foreach($data->result_array() as $i):?>
-      <div class=" bx_<?php echo $i["machine_code"].'_'.$i["id_device"];?> hide" id="<?php echo $i["machine_code"].'_'.$i["no"];?>" style="display: inline-block; margin-right:5px;margin-top:-12px"  >
+      <div class=" bx_<?php echo $i["machine_code"].'_'.$i["id_device"];?> hide" id="<?php echo $i["machine_code"].'_'.$i["no"];?>" style="display:inline-block; margin-right:5px;margin-top:-12px;"  >
         <div class="box ">
           <div class="box-header with-border">
               <span><b><?php echo $i["device_name"];echo '-'.$i["type"] ?></b>,</span>
@@ -56,7 +56,7 @@
             <div class="box-tools pull-right">
             </div>
           </div>
-            <div class="info-box" style="border-radius: 10px;display: flex;"  id="<?php echo 'box'.$i["machine_code"].'_'.$i["id_device"];?>">
+            <div class="info-box" style="border-radius: 10px;display: flex;flex-wrap:wrap;"  id="<?php echo 'box'.$i["machine_code"].'_'.$i["id_device"];?>">
               <!-- <div style="width:80px;margin:10px;text-align:center;"> 
                  <div id="perIECC" class="gauge" style=" margin: 0 auto;width: 70px; --rotation:0deg; --color:#5cb85c; --background:#e9ecef;">
                   <div class="percentage"></div>
