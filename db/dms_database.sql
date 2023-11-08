@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 100131
 File Encoding         : 65001
 
-Date: 2023-10-16 14:14:28
+Date: 2023-11-08 08:38:40
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -52,7 +52,7 @@ CREATE TABLE `data` (
   `flag` varchar(255) DEFAULT NULL,
   `tgl_kirim` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`no`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of data
@@ -60,6 +60,8 @@ CREATE TABLE `data` (
 INSERT INTO `data` VALUES ('11', '0001', 'SEL 849', '1', '192.168.2.100', '2', 'GI WARU', 'TRIP', 'RELAY Disturbance.000', '2023-09-20', '13:29:23', '0', '20/09/2023');
 INSERT INTO `data` VALUES ('12', '0001', 'SEL 849', '1', '192.168.2.100', '2', 'GI WARU', 'TRIP', 'RELAY Disturbance.000', '2023-09-20', '13:47:52', '0', '20/09/2023');
 INSERT INTO `data` VALUES ('13', '0001', 'SEL 849', '1', '192.168.2.100', '2', 'GI WARU', 'TRIP', 'RELAY Disturbance.000', '2023-09-20', '13:47:54', '0', '20/09/2023');
+INSERT INTO `data` VALUES ('14', '0001', 'MICOM P123', '0', '0', '1', 'GI Waru,1', 'alarm tahap3 non blocking', '11.06.2023 13.28.24 Disturbance.000', '2023-11-06', '13:32:57', '0', '06/11/2023');
+INSERT INTO `data` VALUES ('15', '0001', 'MICOM P123', '0', '0', '1', 'GI Waru,1', 'alarm tahap3 non blocking', '11.06.2023 13.34.31 Disturbance.000', '2023-11-06', '13:39:07', '0', '06/11/2023');
 
 -- ----------------------------
 -- Table structure for data_event
@@ -104,15 +106,14 @@ CREATE TABLE `device_list` (
   `location` varchar(255) DEFAULT NULL,
   `gi_name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of device_list
 -- ----------------------------
-INSERT INTO `device_list` VALUES ('1', null, '16049', 'DMS Waru', '1', '-7.346028', '112.746333', 'Sidoarjo', 'Waru');
+INSERT INTO `device_list` VALUES ('1', null, '0001', 'DMS Waru', '1', '-7.346028', '112.746333', 'Sidoarjo', 'Waru');
 INSERT INTO `device_list` VALUES ('3', null, '16050', 'DMS Mojokerto', '1', '-7.462893337141634', '112.42326626828576', 'Mojokerto', 'Mojokerto');
 INSERT INTO `device_list` VALUES ('4', null, '16051', 'DMS Lamongan', '1', '-7.1193549131197935', '112.41563822751078', 'Lamongan', 'Lamongan');
-INSERT INTO `device_list` VALUES ('5', null, '0001', 'DMS Madiun', '1', '-7.6307410549621215', '111.52650561519845', 'Madiun', null);
 
 -- ----------------------------
 -- Table structure for device_list_copy
@@ -166,13 +167,13 @@ CREATE TABLE `device_list_perdevice` (
   `protocol` varchar(255) DEFAULT NULL,
   `pos` int(3) DEFAULT NULL,
   PRIMARY KEY (`no`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=239 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=407 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of device_list_perdevice
 -- ----------------------------
-INSERT INTO `device_list_perdevice` VALUES ('237', '0001', '1', 'MICOM P123', '0', null, null, 'GI Waru#1', null, null, null, null, null, null, null, null, null, null, null, null, '0');
-INSERT INTO `device_list_perdevice` VALUES ('238', '0001', '2', 'SEL489', '2', null, null, 'GI Waru#pojok kanan atas', null, null, null, null, null, null, null, null, null, null, null, null, '1');
+INSERT INTO `device_list_perdevice` VALUES ('405', '0001', '1', 'MICOM P123', '0', null, null, 'GI Waru#1', null, null, null, null, null, null, null, null, null, null, null, null, '1');
+INSERT INTO `device_list_perdevice` VALUES ('406', '0001', '2', 'SEL849', '2', null, null, 'GI Waru#pojok kanan atas', null, null, null, null, null, null, null, null, null, null, null, null, '0');
 
 -- ----------------------------
 -- Table structure for device_user
@@ -301,19 +302,36 @@ CREATE TABLE `im_mon` (
   `port_type` varchar(255) DEFAULT NULL,
   `data_type` varchar(20) DEFAULT NULL,
   `position` int(11) DEFAULT NULL,
+  `pos_all` int(5) DEFAULT NULL,
+  `max_value` float(10,2) DEFAULT NULL,
+  `min_value` float(10,3) DEFAULT NULL,
+  `treshold` float(10,2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=721 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1218 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of im_mon
 -- ----------------------------
-INSERT INTO `im_mon` VALUES ('714', 'TEMPLATEMET', 'RMSMMXU2$MX$A$phsA$instCVal$mag$f', '1', '2', null, 'IA', 'Current A', '0001', null, null, 'SEL489', '2', 'float', '5');
-INSERT INTO `im_mon` VALUES ('715', 'TEMPLATEMET', 'RMSMMXU2$MX$A$phsB$instCVal$mag$f', '1', '2', null, 'IB', 'Current B', '0001', null, null, 'SEL489', '2', 'float', '3');
-INSERT INTO `im_mon` VALUES ('716', 'TEMPLATEMET', 'RMSMMXU2$MX$A$phsC$instCVal$mag$f', '1', '2', null, 'IC', 'Current C', '0001', null, null, 'SEL489', '2', 'float', '6');
-INSERT INTO `im_mon` VALUES ('717', 'TEMPLATEPRO', 'TRIPPTRC1$ST$Tr$general', '1', '2', null, 'TRIP', 'TRIP', '0001', null, null, 'SEL489', '2', 'boolean', '1');
-INSERT INTO `im_mon` VALUES ('718', 'TEMPLATEMET', 'METMMXU1$MX$Hz$mag$f', '1', '2', null, 'F', 'Frekuensi(Hz)', '0001', null, null, 'SEL489', '2', 'float', '2');
-INSERT INTO `im_mon` VALUES ('719', 'TEMPLATEMET', 'RMSMMXU2$DC$NamPlt$vendor', '1', '2', null, 'vendor', 'vendor', '0001', null, null, 'SEL489', '2', 'visible-string', '0');
-INSERT INTO `im_mon` VALUES ('720', 'TEMPLATEMET', 'RMSMMXU2$ST$Health$t', '1', '2', null, 'date', 'Date Trip', '0001', null, null, 'SEL489', '2', 'utc-time', '4');
+INSERT INTO `im_mon` VALUES ('1198', 'IA', 'IA', '1', '1', null, 'IA', 'phaseA', '0001', null, null, 'MICOM P123', '0', 'float', '1', null, '999.00', null, null);
+INSERT INTO `im_mon` VALUES ('1199', 'IB', 'IB', '1', '1', null, 'IB', 'phase B', '0001', null, null, 'MICOM P123', '0', 'float', '19', null, '999.00', null, null);
+INSERT INTO `im_mon` VALUES ('1200', 'IC', 'IC', '1', '1', null, 'IC', 'phase C', '0001', null, null, 'MICOM P123', '0', 'float', '9', null, '999.00', null, null);
+INSERT INTO `im_mon` VALUES ('1201', 'IN', 'IN', '1', '1', null, 'IN', 'phase N', '0001', null, null, 'MICOM P123', '0', 'float', '13', null, '999.00', null, null);
+INSERT INTO `im_mon` VALUES ('1202', 'TRIP', 'TRIP', '1', '1', null, 'TRIP', 'TRIP', '0001', null, null, 'MICOM P123', '0', 'boolean', '18', null, '999.00', null, null);
+INSERT INTO `im_mon` VALUES ('1203', 'TEMPLATEMET', 'METMMXU1$MX$A$phsA$instCVal$mag$f', '1', '2', null, 'A1', 'phase A', '0001', null, null, 'SEL849', '2', 'float', '3', null, '1.17', null, null);
+INSERT INTO `im_mon` VALUES ('1204', 'TEMPLATEMET', 'RMSMMXU2$MX$A$phsA$instCVal$mag$f', '1', '2', null, 'A2', 'phase A2', '0001', null, null, 'SEL849', '2', 'float', '12', null, '1.00', null, null);
+INSERT INTO `im_mon` VALUES ('1205', 'TEMPLATEMET', 'RMSMMXU2$MX$A$phsB$instCVal$mag$f', '1', '2', null, 'B2', 'phase B2', '0001', null, null, 'SEL849', '2', 'float', '6', null, '1.00', null, null);
+INSERT INTO `im_mon` VALUES ('1206', 'TEMPLATEMET', 'RMSMMXU2$MX$A$phsC$instCVal$mag$f', '1', '2', null, 'C2', 'phase C2', '0001', null, null, 'SEL849', '2', 'float', '5', null, '1.00', null, null);
+INSERT INTO `im_mon` VALUES ('1207', 'TEMPLATEMET', 'RMSMMXU2$MX$A$neut$instCVal$mag$f', '1', '2', null, 'n2', 'netral2', '0001', null, null, 'SEL849', '2', 'float', '11', null, '1.00', null, null);
+INSERT INTO `im_mon` VALUES ('1208', 'TEMPLATEMET', 'METMMXU1$MX$TotW$instMag$f', '1', '2', null, 'totW', 'totW', '0001', null, null, 'SEL849', '2', 'float', '17', null, '999.00', null, null);
+INSERT INTO `im_mon` VALUES ('1209', 'TEMPLATEMET', 'METMMXU1$MX$TotVAr$instMag$f', '1', '2', null, 'totVAR', 'totVAR', '0001', null, null, 'SEL849', '2', 'float', '4', null, '10.00', null, null);
+INSERT INTO `im_mon` VALUES ('1210', 'TEMPLATEMET', 'METMMXU1$MX$TotVA$instMag$f', '1', '2', null, 'totVA', 'totVA', '0001', null, null, 'SEL849', '2', 'float', '10', null, '999.00', null, null);
+INSERT INTO `im_mon` VALUES ('1211', 'TEMPLATEMET', 'METMMXU1$MX$TotPF$instMag$f', '1', '2', null, 'totPF', 'tot PF', '0001', null, null, 'SEL849', '2', 'float', '16', null, '1.00', null, null);
+INSERT INTO `im_mon` VALUES ('1212', 'TEMPLATEMET', 'METMMXU1$MX$Hz$instMag$f', '1', '2', null, 'freq', 'freq', '0001', null, null, 'SEL849', '2', 'float', '8', null, '60.00', null, null);
+INSERT INTO `im_mon` VALUES ('1213', 'TEMPLATEMET', 'METMMXU1$MX$A$phsA$instCVal$mag$f', '1', '2', null, 'A1', 'phase A1', '0001', null, null, 'SEL849', '2', 'float', '2', null, '999.00', null, null);
+INSERT INTO `im_mon` VALUES ('1214', 'TEMPLATEMET', 'METMMXU1$MX$A$phsB$instCVal$mag$f', '1', '2', null, 'B1', 'phase B1', '0001', null, null, 'SEL849', '2', 'float', '15', null, '999.00', null, null);
+INSERT INTO `im_mon` VALUES ('1215', 'TEMPLATEMET', 'METMMXU1$MX$A$phsC$instCVal$mag$f', '1', '2', null, 'C1', 'phase C1', '0001', null, null, 'SEL849', '2', 'float', '0', null, '999.00', null, null);
+INSERT INTO `im_mon` VALUES ('1216', 'TEMPLATEMET', 'METMMXU1$MX$A$neut$instCVal$mag$f', '1', '2', null, 'n1', 'netral1', '0001', null, null, 'SEL849', '2', 'float', '7', null, '999.00', null, null);
+INSERT INTO `im_mon` VALUES ('1217', 'TEMPLATEMET', 'METMMXU1$MX$A$phsA$instCVal$mag$f', '1', '2', null, 'test', 'test', '0001', null, null, 'SEL849', '2', 'float', '14', null, '1.00', null, null);
 
 -- ----------------------------
 -- Table structure for it_mon_com
