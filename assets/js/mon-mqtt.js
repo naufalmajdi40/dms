@@ -71,7 +71,7 @@ function onMessageArrived(message) {
                     val = parseInt(parsemsg.val)
                     $(`#val_${machine_code}_${id_device}_${alias}`).text(val)
                 }
-
+                console.log(dataMon.data[i])
                 const deg = (val / 100) * 180;
 
                 try {

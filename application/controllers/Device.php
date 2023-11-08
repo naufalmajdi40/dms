@@ -78,10 +78,18 @@ class Device extends CI_Controller {
 		
 	}
 	public function monitor_data($code){
-		$qry ="select * FROM im_mon a inner join device_list_perdevice b on a.id_device =b.id_device ORDER BY a.pos_all ";
+		$qry ="select * FROM im_mon a inner join device_list_perdevice b on a.id_device =b.id_device ORDER BY a.position ";
 		return $this->db->query($qry)->result();
 	}
 
+	public function search_data(){
+		$code = $this->input->get('code');
+		$name = $this->input->get('name');
+		$qry ="select * FROM im_mon a inner join device_list_perdevice b on a.id_device =b.id_device where name like '%".$name."%' and a.machine_code='".$code."' ORDER BY a.position ";
+		$result=$this->db->query($qry)->result();
+		echo  json_encode($result);
+		#return $this->db->query($qry)->result();
+	}
 	public function baca_data($id_product)
 	{
 
@@ -178,7 +186,7 @@ class Device extends CI_Controller {
     
         $row['data']=$this->Device_model->get_device();
     
-        $this->load->view('header',$dataAdm);	 // Menampilkan bagian header dan object data users
+        $this->load->view('header2',$dataAdm);	 // Menampilkan bagian header dan object data users
         $this->load->view('data/data_device',$row); // Menampilkan config com
         $this->load->view('footer'); // Menampilkan bagian footer
 	}

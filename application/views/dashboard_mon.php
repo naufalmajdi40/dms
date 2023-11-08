@@ -73,7 +73,7 @@
         </section>
   <!-- ending device content -->
       <!-- /////////////////////////////////////////////////////////////////// -->
-      <div class="container-fluid">
+      <div hidden class="container-fluid">
 			<div class="box">
       <center><legend>Data monitoring list </legend></center>
 
@@ -81,7 +81,7 @@
             <div class="card card-primary card-outline card-tabs">
               
               <div class="card-body" style="">
-              <ol id="sortable" style="display:flex;flex-direction: column;" class="dt_list" >
+              <ol  id="sortable" style="display:flex;flex-direction: column;" class="dt_list" >
             
               </ol>
 

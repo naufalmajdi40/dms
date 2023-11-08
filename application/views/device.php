@@ -12,16 +12,17 @@
 
 <!-- <script src="<?php //echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"> defer</script>    
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
-<!-- 
+
+ 
 <script type="text/javascript">
-    //setInterval("cuacaUpdate();",2000); 
+    setInterval("cuacaUpdate();",2000); 
     function cuacaUpdate(){
       $('#refreshh').load(location.href + ' #updateTable');
     }
-  </script> -->
+  </script> 
 
-<!-- <script type="text/javascript">
-    //setInterval("scriptUpdate();",2000); 
+<script type="text/javascript">
+    setInterval("scriptUpdate();",2000); 
     function scriptUpdate(){
       $('#refresh').load(location.href + ' #update');
       // $('#refreshh').load(location.href + ' #updatee');
@@ -29,17 +30,7 @@
       $("#responsecontainer").load("<?php echo base_url().'chart/index/'.$kode_mesin ?>");
       $("#pie").load("<?php echo base_url().'pie'; ?>");
     }
-  </script> -->
-  
-
-
-  
-
-
-
-
-
-
+  </script>
       <h3 style="margin-top:5px; font-size:18.5px">
 	     	Device Monitoring System
        <small>Bring Live Your Device</small>
@@ -86,7 +77,6 @@
       </div>
       <!-- /.row -->   <?php } ?>
       
-
     
       
 
@@ -136,9 +126,22 @@
           </div>
           <!-- /.box -->
         </div>
-          </div>
+      </div>
+<!--     /////////////////////////////////////filter cuy////////////////////////// -->
+<p  hidden id="monitorData"><?php echo JSON_encode( $monitor);?></p>
+<p hidden id="machine_code"><?php echo $kode_mesin;?></p>
+
+    <div class="col-md-4" style="margin-bottom:10px;margin-top:-10px;z-index:99">
+            <div class="input-group">
+            <input type="text"  id="filter_device" class="form-control" placeholder="Search device">
+            <span class="input-group-btn">
+            <button type="submit" name="search" onclick="filterdata()" id="search-btn" class="btn btn-success"><i class="fa fa-search"></i>
+            </button>
+            </span>
+            </div>
+      </div>
+     
            <!-- //////////////////////data monitor cuy/////////////// -->
-    <p id="monitorData" hidden><?php echo JSON_encode( $monitor);?></p>
      <div id="drag" class=" col-lg-12" style="display:flex;flex-wrap:wrap;flex-direction: row" >
       <?php  
       foreach ($monitor  as $dt) {
@@ -153,7 +156,8 @@
           $type="IEC61850";
         }
         ?>
-      <div class="col-lg-3">
+       
+      <div class="" id ="<?php echo $dt->machine_code."_".$dt->id ?>" style="width:230px;margin-right:7px;margin-bottom:-7px;">
         <div class="info-box" style="border-radius: 10px;">
            <span class="info-box-icon" style="background-color: white; border-radius: 10px; padding-top:20px; padding-left:10px;">
             <!-- <div id="perMDCA" class="gauge" style="width: 70px; --rotation:0deg; --color:#5cb85c; --background:#e9ecef;"> -->
@@ -191,14 +195,11 @@
         <!-- /.info-box -->
       </div>
     <?php }?> 
-  
-        </div> 
+    </div> 
       <!-- -----------------------------end  data monitor---------------------------------------     -->
    
   <!-- TABLE: LATEST ORDERS -->
-  <div id="refresh"  class="row">
- 
-        
+  <div id="refresh"  class="row">   
         <div id="update" class="col-md-6 col-sm-6 col-xs-12">
         <a style="color:black;" href="<?php echo site_url('data_per_device/index/'.$kode_mesin) ?>">
           <div class="info-box">
@@ -352,14 +353,16 @@
 </div>
 <!-- ./wrapper -->
 
-
-
 <!-- jQuery 3 -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+<script src="<?php echo base_url('assets/bower_components/jquery/dist/jquery.min.js')?>"></script>
 
-<!-- <script src="<?php //echo base_url('assets/bower_components/jquery/dist/jquery.min.js')?>"></script> -->
+<script src="<?php echo base_url('assets/bower_components/jquery/dist/jquery-ui.js')?>"></script>
+<!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
+
 <!-- Bootstrap 3.3.7 -->
 <!-- <script src="<?php // echo base_url('assets/bower_components/bootstrap/dist/js/bootstrap.min.js')?>"></script>
-<!-- SlimScroll -->
+ SlimScroll -->
 <script src="<?php //echo base_url('assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js')?>"></script>
 <!-- FastClick
 <script src="<?php //echo base_url('assets/bower_components/fastclick/lib/fastclick.js')?>"></script> -->
@@ -374,18 +377,16 @@
 <!-- <script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js"></script>
 <script src="<?php echo base_url('assets/js/data-mqtt.js') ?>"></script>
-  <!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
  <script src="<?php echo base_url('assets/bower_components/chart.js/Chart.js')?>"></script>
 <script src="<?php  echo base_url('assets/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js')?>"></script>
 
-<script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script>
-<script src="<?php echo base_url('assets/bower_components/grafik/jquery-latest.js')?>"></script>
-<script src="<?php echo base_url('assets/bower_components/grafik/mdb.min.js')?>"></script> 
-<script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script>
+<!--<script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script>
+ <script src="<?php echo base_url('assets/bower_components/grafik/mdb.min.js')?>"></script>  -->
 
 
 
-<script src="<?php echo base_url('assets/js/adminlte.min.js') ?>"></script> -->
+<script src="<?php echo base_url('assets/js/adminlte.min.js') ?>"></script> 
 
 
 
@@ -402,11 +403,11 @@
     }
 });
 var greenIcon = new HubIcon({
-    iconUrl: '/dms/assets/./img/device.png'
+    iconUrl: '../../assets/img/device.png'
 });
 
 var redIcon = new HubIcon({
-    iconUrl: '/dms/assets/./img/device2.png'
+    iconUrl: '../../assets/img/device2.png'
 });
 
 	var map = L.map('map').setView([-1.766654, 117.347558], 5);
@@ -428,11 +429,7 @@ var redIcon = new HubIcon({
 
 	<?php date_default_timezone_set('Asia/Jakarta');
 		$tanggal= date('Y-m-d'); 
-    
-
-    
- 
-
+  
     foreach ($pemetaan as $value) { 
       foreach($result as $a=>$hasil){
        if($value->machine_code == $hasil){
@@ -448,7 +445,7 @@ var redIcon = new HubIcon({
         if($find>0){$image="redIcon";}else{$image="greenIcon";}?>
 
 
-var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-body'><h5 class='card-title'>"+<?= '"'.$value->device_name.'"' ?>+"</h5><ul class='list-group list-group-flush'><li class='list-group-item'>Machine Code<span class='badge bg-primary rounded-pill'>"+<?= '"'.$value->machine_code.'"' ?>+"</span></li><li class='list-group-item'>Location<span class='badge bg-primary rounded-pill'>"+<?= '"'.$value->location.'"' ?>+"</span></li><li class='list-group-item'>Disturbance Today : <span class='badge bg-primary rounded-pill'>"+<?= '"'.$find.'"' ?>+"</span></li></ul><a style='color:white;' href='/dms/device/index/"+<?= '"'.$value->machine_code.'"' ?>+"' class='btn btn-primary'>Detail</a></div></div>";
+var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-body'><h5 class='card-title'>"+<?= '"'.$value->device_name.'"' ?>+"</h5><ul class='list-group list-group-flush'><li class='list-group-item'>Machine Code<span class='badge bg-primary rounded-pill'>"+<?= '"'.$value->machine_code.'"' ?>+"</span></li><li class='list-group-item'>Location<span class='badge bg-primary rounded-pill'>"+<?= '"'.$value->location.'"' ?>+"</span></li><li class='list-group-item'>Disturbance Today : <span class='badge bg-primary rounded-pill'>"+<?= '"'.$find.'"' ?>+"</span></li></ul><a style='color:white;' href='#' class='btn btn-primary'>Detail</a></div></div>";
 		L.marker([<?= $value->latitude ?>, <?= $value->longitude ?>], {
         icon: <?= $image ?>,
 				radius: 90000,
@@ -459,9 +456,85 @@ var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-
 			.addTo(map);
 
 	<?php }  ?>
+  function appendWidget(data){
+    buf = JSON.parse(data)
+    // if($dt->data_type=="boolean"){
+    //         echo '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="lampu l-second" style="width: 50px;height: 50px;">';
+    //       }
+    //       else if($dt->data_type=="float"||$dt->data_type=="integer"){
+    //         echo  '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="gauge" style="width: 70px; --rotation:0deg; --color:#5cb85c; --background:#e9ecef;">';
+    //       }
+    //       else if($dt->data_type=="utc-time"){
+    //         echo '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="	text-primary" style="width: 50px;height: 50px;margin-top:-20px;margin-left:10px;"><i class="far fa-clock " ></i>';
+    //       }
+    //       else if($dt->data_type=="visible-string"){
+    //         echo '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="	text-success" style="width: 50px;height: 50px;margin-top:-20px;margin-left:10px;"><i class="fas fa-info " ></i>';
+    //       }
+    for(let i =0 ;i<buf.length;i++){
+        type=""
+        port_type=""
+        if(buf[i].port_type=="0"){
+          port_type="Modbus";
+        }
+        else if(buf[i].port_type=="1"){
+          port_type="TCP-IP";
+        }
+        if(buf[i].port_type=="2"){
+          port_type="IEC61850";
+        }
 
+        if(buf[i].data_type=="boolean"){
+          type=`<div id="dt_${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias}" class="lampu l-second" style="width: 50px;height: 50px;">`
+        }
+        else if (buf[i].data_type=="integer" || buf[i].data_type=="float"){
+          type=`<div id="dt_${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias}" class="gauge" style="width: 70px; --rotation:0deg; --color:#5cb85c; --background:#e9ecef;">`   
+        }
+
+        else if(buf[i].data_type=="utc-time"){
+            type= `<div id="dt_${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias}"  class="	text-primary" style="width: 50px;height: 50px;margin-top:-20px;margin-left:10px;"><i class="far fa-clock " ></i>`
+          }
+        else if(buf[i].data_type=="visible-string"){
+            type=  `<div id="dt_${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias}"  class="	text-success" style="width: 50px;height: 50px;margin-top:-20px;margin-left:10px;"><i class="fas fa-info " ></i>`
+          }
+        dthtml=`
+        <div class="" id="${buf[i].machine_code}_${buf[i].id}" style="width:240px;margin-right:7px;margin-bottom:-7px;">
+          <div class="info-box" style="border-radius: 10px;">
+            <span class="info-box-icon" style="background-color: white; border-radius: 10px; padding-top:20px; padding-left:10px;">
+              ${type}
+                         
+              <div class="percentage"></div>
+                <div class="mask"></div>
+                <span class="value"></span>
+              </div>
+            </span>
+            <div class="info-box-content">
+            <span class="info-box-text">${buf[i].name}</span>
+            <span class="label label-success">${buf[i].type}</span> <span class="label label-success">${port_type} </span>
+            <span class="info-box-number" id="val_${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias}">0</span>
+           </div>
+          </div>`
+
+        $('#drag').append(dthtml)
+
+
+
+    }
+
+  }
+  function filterdata(){
+      let filter= $('#filter_device').val()
+      let machine_code= $('#machine_code').text()
+      let url =`../search_data?name=${filter}&code=${machine_code}`
+      $.get( url, function( data ) {
+         $('#monitorData').text(data)
+        $('#drag').html("")
+        appendWidget(data)
+
+      });
+    }
   $(document).ready(function () {
     //$('.sidebar-menu').tree()
+    
     startConnect();
     $("#drag").sortable({
       update: function(event, ui) {           
@@ -473,7 +546,11 @@ var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-
                 console.log(ids)
                 $.get( "updPosition2?data="+ids)
                     .done(function(data) {  
-                     console.log(data)
+                      $.get( "../../mon/updPosition2?data="+ids)
+                          .done(function(data) {  
+                         console.log(data)
+                      });
+                     console.log(ids)
                  });
                  
                 }

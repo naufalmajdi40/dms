@@ -474,7 +474,7 @@ ini_set('error_reporting', E_ALL);
       } ?>
 
 
-      var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-body'><h5 class='card-title'>" + <?= '"' . $value->device_name . '"' ?> + "</h5><ul class='list-group list-group-flush'><li class='list-group-item'>Machine Code<span class='badge bg-primary rounded-pill'>" + <?= '"' . $value->machine_code . '"' ?> + "</span></li><li class='list-group-item'>Location<span class='badge bg-primary rounded-pill'>" + <?= '"' . $value->location . '"' ?> + "</span></li><li class='list-group-item'>Disturbance Today : <span class='badge bg-primary rounded-pill'>" + <?= '"' . $find . '"' ?> + "</span></li></ul><a style='color:white;' href='/dms/device/index/" + <?= '"' . $value->machine_code . '"' ?> + "' class='btn btn-primary'>Detail</a></div></div>";
+      var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-body'><h5 class='card-title'>" + <?= '"' . $value->device_name . '"' ?> + "</h5><ul class='list-group list-group-flush'><li class='list-group-item'>Machine Code<span class='badge bg-primary rounded-pill'>" + <?= '"' . $value->machine_code . '"' ?> + "</span></li><li class='list-group-item'>Location<span class='badge bg-primary rounded-pill'>" + <?= '"' . $value->location . '"' ?> + "</span></li><li class='list-group-item'>Disturbance Today : <span class='badge bg-primary rounded-pill'>" + <?= '"' . $find . '"' ?> + "</span></li></ul><a style='color:white;' href='device/index/" + <?= '"' . $value->machine_code . '"' ?> + "' class='btn btn-primary'>Detail</a></div></div>";
       L.marker([<?= $value->latitude ?>, <?= $value->longitude ?>], {
           icon: <?= $image ?>,
           radius: 90000,

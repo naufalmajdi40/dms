@@ -169,7 +169,7 @@
       </div>     
       
       <!-- Search-->
-      <form hidden action="#" method="get" class="sidebar-form">
+      <form search action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
           <span class="input-group-btn">

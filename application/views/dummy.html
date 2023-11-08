@@ -1,0 +1,52 @@
+<?php  
+      foreach ($monitor  as $dt) {
+        $type ="xx";
+        if($dt->port_type=="0"){
+          $type="Modbus";
+        }
+        else if($dt->port_type=="1"){
+          $type="TCP-IP";
+        }
+        if($dt->port_type=="2"){
+          $type="IEC61850";
+        }
+        ?>
+
+<div class="" id="<?php echo $dt->machine_code." _ ".$dt->id ?>" style="width:240px;margin-right:7px;margin-bottom:-7px;">
+    <div class="info-box" style="border-radius: 10px;">
+        <span class="info-box-icon" style="background-color: white; border-radius: 10px; padding-top:20px; padding-left:10px;">
+            <!-- <div id="perMDCA" class="gauge" style="width: 70px; --rotation:0deg; --color:#5cb85c; --background:#e9ecef;"> -->
+            <!-- ${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias} -->
+        <?php 
+          if($dt->data_type=="boolean"){
+            echo '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="lampu l-second" style="width: 50px;height: 50px;">';
+          }
+          else if($dt->data_type=="float"||$dt->data_type=="integer"){
+            echo  '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="gauge" style="width: 70px; --rotation:0deg; --color:#5cb85c; --background:#e9ecef;">';
+          }
+          else if($dt->data_type=="utc-time"){
+            echo '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="	text-primary" style="width: 50px;height: 50px;margin-top:-20px;margin-left:10px;"><i class="far fa-clock " ></i>';
+          }
+          else if($dt->data_type=="visible-string"){
+            echo '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="	text-success" style="width: 50px;height: 50px;margin-top:-20px;margin-left:10px;"><i class="fas fa-info " ></i>';
+          }
+
+            ?>
+                     
+            <div class="percentage"></div>
+              <div class="mask"></div>
+              <span class="value"></span>
+    </div>
+    </span>
+
+
+    <div class="info-box-content">
+        <span class="info-box-text"><?php echo $dt->name; ?></span>
+        <span class="label label-success"><?php echo $dt->type; ?></span> <span class="label label-success"><?php echo $type;?> </span>
+        <span class="info-box-number" id="<?php echo 'val_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias  ?>">0</span>
+    </div>
+    <!-- /.info-box-content -->
+</div>
+<!-- /.info-box -->
+</div>
+<?php }?>

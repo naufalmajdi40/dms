@@ -49,7 +49,6 @@ function onMessageArrived(message) {
     // console.log("OnMessageArrived: " + message.payloadString);
 
     dataMon = JSON.parse($('#monitorData').text())
-        // console.log(dataMon)
     parsemsg = JSON.parse(message.payloadString)
     parseDest = message.destinationName.split("/")
     machine_code = (parseDest[1])
@@ -68,8 +67,8 @@ function onMessageArrived(message) {
                     val = parseInt(parsemsg.val)
                     $(`#val_${machine_code}_${id_device}_${alias}`).text(val)
                 }
-                max_val = dataMon[i].max_val
-                    //console.log(dataMon[i].max_val)
+                max_val = dataMon[i].max_value
+                console.log(dataMon[i])
 
                 const deg = (val / max_val) * 180;
                 try {
@@ -101,10 +100,7 @@ function onMessageArrived(message) {
                 let val = timeConverter(parsemsg.val)
                 $(`#val_${machine_code}_${id_device}_${alias}`).text(val)
             }
-
-
         }
-
     }
 }
 
