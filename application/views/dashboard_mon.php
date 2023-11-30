@@ -57,15 +57,6 @@
             </div>
           </div>
             <div class="info-box" style="border-radius: 10px;display: flex;flex-wrap:wrap;"  id="<?php echo 'box'.$i["machine_code"].'_'.$i["id_device"];?>">
-              <!-- <div style="width:80px;margin:10px;text-align:center;"> 
-                 <div id="perIECC" class="gauge" style=" margin: 0 auto;width: 70px; --rotation:0deg; --color:#5cb85c; --background:#e9ecef;">
-                  <div class="percentage"></div>
-                  <div class="mask"></div>
-                  <span class="value"></span>
-                </div>
-                <span class="label label-primary"> &nbsp</span>
-                 </div> -->
-
             </div>
           </div> 
         </div>
@@ -74,36 +65,16 @@
   <!-- ending device content -->
       <!-- /////////////////////////////////////////////////////////////////// -->
       <div hidden class="container-fluid">
-			<div class="box">
-      <center><legend>Data monitoring list </legend></center>
-
-				
-            <div class="card card-primary card-outline card-tabs">
-              
-              <div class="card-body" style="">
-              <ol  id="sortable" style="display:flex;flex-direction: column;" class="dt_list" >
-            
-              </ol>
-
-                <br>
+			  <div class="box">
+          <center><legend>Data monitoring list </legend></center>	
+          <div class="card card-primary card-outline card-tabs">
+            <div class="card-body" style="">
+            <ol  id="sortable" style="display:flex;flex-direction: column;" class="dt_list" > </ol>
+            <br>
         </div>
-        </div>
-        </div>
+      </div>
+    </div>
       
-					
-					
-					
-						
-    
- 
-
-
-    <!--  ///////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
 	  <br>
 
        

@@ -72,7 +72,8 @@ class Beranda extends CI_Controller {
 				'notif'=>$this->user_notif($user),
 				'id_product'=>$id_product,
 				'pemetaan'=>$this->Device_model->get_map($user),
-				'monitor'=>$this->monitor_data() 
+				'monitor'=>$this->monitor_data(),
+				'device'=>$this->device_list_device()
 				// 'jenis_tanaman'=>$this->Tanaman_model->get_by_id($id_product)->jenis_tanaman, 
 				// 'tgl_panen'=>$this->Tanaman_model->get_by_id($id_product)->tgl_panen,
 				// 'latitude'=>$this->Notifikasi_model->get_by_id($id_product)->latitude,
@@ -96,7 +97,8 @@ class Beranda extends CI_Controller {
 				'notif'=>$this->user_notif($user),
 				'id_product'=>$id_product,
 				'pemetaan'=>$this->Device_model->get_map($user), 
-				'monitor'=>$this->monitor_data()
+				'monitor'=>$this->monitor_data(),
+				'device'=>$this->device_list_device()
 				// 'jenis_tanaman'=>$this->Tanaman_model->get_by_id($id_product)->jenis_tanaman, 
 				// 'tgl_panen'=>$this->Tanaman_model->get_by_id($id_product)->tgl_panen,
 				// 'latitude'=>$this->Notifikasi_model->get_by_id($id_product)->latitude,
@@ -115,6 +117,11 @@ class Beranda extends CI_Controller {
 	 
 	public function monitor_data(){
 		$qry ="select * FROM im_mon a inner join device_list_perdevice b on a.id_device =b.id_device ORDER BY a.position  asc limit 8";
+		return $this->db->query($qry)->result();
+	}
+
+	public function device_list_device(){
+		$qry ="select * FROM device_list_perdevice";
 		return $this->db->query($qry)->result();
 	}
 	public function baca_data($user)

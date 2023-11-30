@@ -1,6 +1,4 @@
-<!-------------------------------------------------------*/
-/* Copyright   : Amin Rusydi                            */
-/*-------------------------------------------------------->
+
 <?php
 	ini_set('display_errors', '0');
     ini_set('error_reporting', E_ALL);
@@ -10,16 +8,16 @@
 
     <section class="content-header">
 
-<!-- <script src="<?php //echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"> defer</script>    
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
 
- 
+<script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script>
+
+
 <script type="text/javascript">
     setInterval("cuacaUpdate();",2000); 
     function cuacaUpdate(){
       $('#refreshh').load(location.href + ' #updateTable');
     }
-  </script> 
+  </script>
 
 <script type="text/javascript">
     setInterval("scriptUpdate();",2000); 
@@ -27,10 +25,18 @@
       $('#refresh').load(location.href + ' #update');
       // $('#refreshh').load(location.href + ' #updatee');
       // $('#refreshGambar').load(location.href + ' #updateGambar');
-      $("#responsecontainer").load("<?php echo base_url().'chart/index/'.$kode_mesin ?>");
+      $("#responsecontainer").load("<?php echo base_url().'grafik'; ?>");
       $("#pie").load("<?php echo base_url().'pie'; ?>");
     }
   </script>
+
+  
+
+
+
+
+
+
       <h3 style="margin-top:5px; font-size:18.5px">
 	     	Device Monitoring System
        <small>Bring Live Your Device</small>
@@ -65,7 +71,7 @@
             <div class="box-body">
 	    <ul>
               <li> Sepertinya Anda belum mengganti password pada menu <b>user</b>, demi keamanan maka perbarui password Anda. </li>
-	      <li> Jangan lupa lengkapi data pribadi Anda pada menu <b>Data Mahasiswa.</b> </li>
+	      <li> Jangan lupa lengkapi data pribadi Anda pada menu <b>Data .</b> </li>
 	    <ul>
             </div>
             <!-- /.box-body -->
@@ -77,6 +83,7 @@
       </div>
       <!-- /.row -->   <?php } ?>
       
+
     
       
 
@@ -105,8 +112,8 @@
               </div>
             </div>
             <div class="box-body">
-                      <?php 
-                  $kodePemetaan= array();
+              <?php 
+                $kodePemetaan= array();
                   $kodeHasil =  array();
                   foreach($pemetaan as $value){
                     array_push($kodePemetaan, $value->machine_code);
@@ -115,10 +122,7 @@
                   foreach($countDisturbance as $dataajahh){
                     array_push($kodeHasil, $dataajahh->machine_code);
                   }
-
-                  $result=array_diff($kodePemetaan,$kodeHasil);
-
-              
+                  $result=array_diff($kodePemetaan,$kodeHasil);       
               ?>
               <div id="map" style="height:450px"></div>
             </div>
@@ -126,58 +130,19 @@
           </div>
           <!-- /.box -->
         </div>
-      </div>
-<!--     /////////////////////////////////////filter cuy////////////////////////// -->
-<p hidden id="monitorData"><?php echo JSON_encode( $monitor);?></p>
-<p hidden id="machine_code"><?php echo $kode_mesin;?></p>
-    <div class="col-md-4" style="margin-bottom:10px;margin-top:-10px;z-index:99">
-      <div class="input-group">
-      <input type="text"  id="filter_device" class="form-control" placeholder="Search device">
-      <span class="input-group-btn">
-      <button type="submit" name="search" onclick="filterdata()" id="search-btn" class="btn btn-success"><i class="fa fa-search"></i>
-      </button>
-      </span>
-      </div>
-      </div>
-      <br><br> 
-           <!-- //////////////////////data monitor cuy/////////////// -->
-       
-    <?php   for  ($i =0 ;$i<sizeof($device);$i++){
-      $type="";
-      if($device[$i]->port_type=="0"){
-          $type="Modbus";
-        }
-        else if($device[$i]->port_type=="1"){
-          $type="TCP-IP";
-        }
-        if($device[$i]->port_type=="2"){
-          $type="IEC61850";
-       }
-       ?>
-    <div class="box box-success " >
-    <div class="box-header with-border">
-        <h3 class="box-title"><b><?php echo($device[$i]->rack_location);?></b>, <?=($device[$i]->type);?>-<?php echo $type;?> </h3>
-        <div class="box-tools pull-right">
-          <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-          </button>
-           </div>
-        </div>
-        <div class="box-body info-box drag" id="bd_<?php echo($device[$i]->id_device);?>" style="display:flex;flex-wrap:wrap;flex-direction: row;padding-top:10px;padding-left:10px;" >
-      </div>   
-    </div>
-      <?php } ?>
-     
+          </div>
 
-      <!-- -----------------------------end  data monitor---------------------------------------     -->
   <!-- TABLE: LATEST ORDERS -->
-  <div id="refresh"  class="row">   
+  <div id="refresh"  class="row">
+ 
+        
         <div id="update" class="col-md-6 col-sm-6 col-xs-12">
-        <a style="color:black;" href="<?php echo site_url('data_per_device/index/'.$kode_mesin) ?>">
+        <a style="color:black;" href="<?php echo site_url('data_per_day') ?>">
           <div class="info-box">
             <span class="info-box-icon bg-orange"><i class="ion ion-ios-pulse"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Total Disturbance</span>
+              <span class="info-box-text">Total diturbance</span>
               <span class="info-box-number"><?php  echo $disturbanceDay." Disturbance/day"; ?></span>
               
             </div>
@@ -287,7 +252,7 @@
             </div>
             <!-- /.box-body -->
             <div class="box-footer clearfix">
-              <a href="/dms/./data" class="btn btn-sm btn-warning btn-flat pull-right">View All Records</a>
+              <a href="data" class="btn btn-sm btn-warning btn-flat pull-right">View All Records</a>
             </div>
             <!-- /.box-footer -->
           </div>
@@ -324,45 +289,36 @@
 </div>
 <!-- ./wrapper -->
 
+
+
 <!-- jQuery 3 -->
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
 <script src="<?php echo base_url('assets/bower_components/jquery/dist/jquery.min.js')?>"></script>
-
-<script src="<?php echo base_url('assets/bower_components/jquery/dist/jquery-ui.js')?>"></script>
-<!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
-
 <!-- Bootstrap 3.3.7 -->
-<!-- <script src="<?php // echo base_url('assets/bower_components/bootstrap/dist/js/bootstrap.min.js')?>"></script>
- SlimScroll -->
-<script src="<?php //echo base_url('assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js')?>"></script>
-<!-- FastClick
-<script src="<?php //echo base_url('assets/bower_components/fastclick/lib/fastclick.js')?>"></script> -->
+<script src="<?php echo base_url('assets/bower_components/bootstrap/dist/js/bootstrap.min.js')?>"></script>
+<!-- SlimScroll -->
+<script src="<?php echo base_url('assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js')?>"></script>
+<!-- FastClick -->
+<script src="<?php echo base_url('assets/bower_components/fastclick/lib/fastclick.js')?>"></script>
 
-<!-- 
-<script src="assets/bower_components/select2/dist/js/select2.full.min.js"></script> -->
+
+<script src="assets/bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- InputMask -->
-<!-- <script src="assets/plugins/input-mask/jquery.inputmask.js"></script>
+<script src="assets/plugins/input-mask/jquery.inputmask.js"></script>
 <script src="assets/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="assets/plugins/input-mask/jquery.inputmask.extensions.js"></script> -->
-
-<!-- <script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js"></script>
-<script src="<?php echo base_url('assets/js/data-mqtt.js') ?>"></script>
-<!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
- <script src="<?php echo base_url('assets/bower_components/chart.js/Chart.js')?>"></script>
-<script src="<?php  echo base_url('assets/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js')?>"></script>
-
-<!--<script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script>
- <script src="<?php echo base_url('assets/bower_components/grafik/mdb.min.js')?>"></script>  -->
+<script src="assets/plugins/input-mask/jquery.inputmask.extensions.js"></script>
 
 
 
-<script src="<?php echo base_url('assets/js/adminlte.min.js') ?>"></script> 
+<script src="<?php echo base_url('assets/bower_components/chart.js/Chart.js')?>"></script>
+<script src="<?php echo base_url('assets/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js')?>"></script>
 
+<script src="<?php echo base_url('assets/bower_components/grafik/jquery-3.4.0.min.js')?>"></script>
+<script src="<?php echo base_url('assets/bower_components/grafik/mdb.min.js')?>"></script>
 
 
 <!-- AdminLTE for demo purposes -->
 <!-- AdminLTE App -->
+<script src="<?php echo base_url('assets/js/adminlte.min.js')?>"></script>
 
 <script>
   var HubIcon = L.Icon.extend({
@@ -374,11 +330,11 @@
     }
 });
 var greenIcon = new HubIcon({
-    iconUrl: '../../assets/img/device.png'
+    iconUrl: 'assets/img/device.png'
 });
 
 var redIcon = new HubIcon({
-    iconUrl: '../../assets/img/device2.png'
+    iconUrl: 'assets/img/device2.png'
 });
 
 	var map = L.map('map').setView([-1.766654, 117.347558], 5);
@@ -389,7 +345,10 @@ var redIcon = new HubIcon({
         'className' : 'custom'
         };
 
-	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  
+
+
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 18,
 		id: 'mapbox/light-v10',
 	}).addTo(map);
@@ -397,7 +356,7 @@ var redIcon = new HubIcon({
 
 	<?php date_default_timezone_set('Asia/Jakarta');
 		$tanggal= date('Y-m-d'); 
-  
+
     foreach ($pemetaan as $value) { 
       foreach($result as $a=>$hasil){
        if($value->machine_code == $hasil){
@@ -413,7 +372,7 @@ var redIcon = new HubIcon({
         if($find>0){$image="redIcon";}else{$image="greenIcon";}?>
 
 
-var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-body'><h5 class='card-title'>"+<?= '"'.$value->device_name.'"' ?>+"</h5><ul class='list-group list-group-flush'><li class='list-group-item'>Machine Code<span class='badge bg-primary rounded-pill'>"+<?= '"'.$value->machine_code.'"' ?>+"</span></li><li class='list-group-item'>Location<span class='badge bg-primary rounded-pill'>"+<?= '"'.$value->location.'"' ?>+"</span></li><li class='list-group-item'>Disturbance Today : <span class='badge bg-primary rounded-pill'>"+<?= '"'.$find.'"' ?>+"</span></li></ul><a style='color:white;' href='#' class='btn btn-primary'>Detail</a></div></div>";
+var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-body'><h5 class='card-title'>"+<?= '"'.$value->device_name.'"' ?>+"</h5><ul class='list-group list-group-flush'><li class='list-group-item'>Machine Code<span class='badge bg-primary rounded-pill'>"+<?= '"'.$value->machine_code.'"' ?>+"</span></li><li class='list-group-item'>Location<span class='badge bg-primary rounded-pill'>"+<?= '"'.$value->location.'"' ?>+"</span></li><li class='list-group-item'>Disturbance Today : <span class='badge bg-primary rounded-pill'>"+<?= '"'.$find.'"' ?>+"</span></li></ul><a style='color:white;' href='/dms/device/index/"+<?= '"'.$value->machine_code.'"' ?>+"' class='btn btn-primary'>Detail</a></div></div>";
 		L.marker([<?= $value->latitude ?>, <?= $value->longitude ?>], {
         icon: <?= $image ?>,
 				radius: 90000,
@@ -424,110 +383,10 @@ var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-
 			.addTo(map);
 
 	<?php }  ?>
-  function appendWidget(data){
-    buf = data
-    for(let i =0 ;i<buf.length;i++){
-        type=""
-        port_type=""
-        if(buf[i].port_type=="0"){
-          port_type="Modbus";
-        }
-        else if(buf[i].port_type=="1"){
-          port_type="TCP-IP";
-        }
-        if(buf[i].port_type=="2"){
-          port_type="IEC61850";
-        }
 
-        if(buf[i].data_type=="boolean"){
-          type=`<div id="dt_${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias}" class="lampu l-second" style="width: 50px;height: 50px;">`
-        }
-        else if (buf[i].data_type=="integer" || buf[i].data_type=="float"){
-          type=`<div id="dt_${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias}" class="gauge" style="width: 70px; --rotation:0deg; --color:#5cb85c; --background:#e9ecef;">
-          <div class="percentage"></div>
-          <div class="mask" style="background-color:#008548;"></div>
-          `   
-        }
-
-        else if(buf[i].data_type=="utc-time"){
-            type= `<div id="dt_${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias}"  class="	text-primary" style="width: 50px;height: 50px;margin-top:-20px;margin-left:10px;"><i class="far fa-clock " ></i>`
-          }
-        else if(buf[i].data_type=="visible-string"){
-            type=  `<div id="dt_${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias}"  class="	text-success" style="width: 50px;height: 50px;margin-top:-20px;margin-left:10px;"><i class="fas fa-info " ></i>`
-          }
-        dthtml=`
-        <div class="" id="${buf[i].machine_code}_${buf[i].im_mon_id}" style="width:240px;margin-right:7px;margin-bottom:-7px;">
-          <div class="info-box bg-green" style="">
-          <span class="info-box-icon" style="  padding-top:20px; padding-left:10px;">
-              ${type} 
-                <span class="value"></span>
-              </div>
-          </span>
-          <div class="info-box-content">
-          <span class="info-box-text">${buf[i].name}</span>
-          <span class="">${buf[i].type}</span> <span class="">${port_type} </span>
-          <span class="info-box-number" id="val_${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias}">0</span>
-          </div>
-        </div>`
-
-        $(`#bd_${buf[i].id_device}`).append(dthtml)
-
-
-
-    }
-
-  }
-  function filterdata(){
-      let filter= $('#filter_device').val()
-      let machine_code= $('#machine_code').text()
-      let url =`../search_data?name=${filter}&code=${machine_code}`
-      $.get( url, function( data ) {
-         $('#monitorData').text(data)
-        $('.drag').html("")
-        console.log(data)
-        dt=JSON.parse(data)
-        appendWidget(dt)
-
-      });
-    }
   $(document).ready(function () {
-    
-    //$('.sidebar-menu').tree()
-    readDevice()
-    function readDevice(){
-      $.get("../../mon/apiReadMon",(res)=>{
-       
-        // $(`#mon_data`).val(res)
-        dt = JSON.parse(res)
-        buf= dt.data
-          appendWidget(buf)
-      })
-    }
-
-
-    $(".drag").sortable({
-      update: function(event, ui) {           
-        let ids = $(this).children().get().map(function(el) {
-        distance: 5
-          return el.id
-            }).join(",");
-            console.log(ids)
-            $.get( "updPosition2?data="+ids)
-                .done(function(data) {  
-                  $.get( "../../mon/updPosition2?data="+ids)
-                      .done(function(data) {  
-                      console.log(data)
-                  });
-                  console.log(ids)
-              });
-              
-          }
-     });
-    
+    $('.sidebar-menu').tree()
   })
-
-
-
 </script>
 
 </body>

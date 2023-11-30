@@ -177,9 +177,6 @@ ini_set('error_reporting', E_ALL);
         </div>
         <div class="box-body">
           <?php
-
-
-
           $kodePemetaan = array();
           $kodeHasil =  array();
           foreach ($pemetaan as $value) {
@@ -189,10 +186,7 @@ ini_set('error_reporting', E_ALL);
           foreach ($countDisturbance as $dataajahh) {
             array_push($kodeHasil, $dataajahh->machine_code);
           }
-
           $result = array_diff($kodePemetaan, $kodeHasil);
-
-
           ?>
           <div id="map" style="height:350px"></div>
         </div>
@@ -201,7 +195,9 @@ ini_set('error_reporting', E_ALL);
       <!-- /.box -->
 
     </div>
-    <section class="col-lg-6"style ="  display:height:300px;flex;flex-direction: row;">
+   
+
+    <section  class="col-lg-6"style ="  display:height:300px;flex;flex-direction: row;">
        
       <!-- ////////////////////// monitor cuy/////////////// -->
       <?php  
@@ -235,16 +231,12 @@ ini_set('error_reporting', E_ALL);
           else if($dt->data_type=="visible-string"){
             echo '<div id="dt_'.$dt->machine_code.'_'.$dt->id_device.'_'.$dt->alias.'" class="	text-success" style="width: 50px;height: 50px;margin-top:-20px;margin-left:10px;"><i class="fas fa-info " ></i>';
           }
-
-            ?>
-                     
+          ?>          
             <div class="percentage"></div>
               <div class="mask"></div>
               <span class="value"></span>
             </div>
           </span>
-          
-    
           <div class="info-box-content">
             <span class="info-box-text"><?php echo $dt->name; ?></span>
             <span class="label label-success"><?php echo $dt->type; ?></span> <span class="label label-success"><?php echo $type;?> </span>
@@ -256,9 +248,6 @@ ini_set('error_reporting', E_ALL);
       </div>
     <?php }?> 
     <!-- --------------------------------------------------------------------     -->
-     
-    
-
 
     </section>
     <!-- /.col -->
@@ -266,7 +255,82 @@ ini_set('error_reporting', E_ALL);
 
   </div>
 
-  <p id="monitorData" hidden><?php echo JSON_encode( $monitor);?></p>
+
+
+  <!-- <section hidden  class="col-md-12" style =" height:410px;flex;flex-direction: row;background-color: white;">
+    <img src="assets/img/lan.png" style="width:400px;height:170px; display: block;margin-left: auto;margin-right: auto;" alt="Flowers in Chania">
+      <p class="label-success" style="margin-left: auto;margin-right: auto;margin-top:-20px;"><b><center >DMS 0001 GI WARU</center></b></p>
+    <div style="margin-left:50px">
+      <table>
+      <tr>
+        <th style="width:250px;">TCP/IP</th>
+        <th style="width:250px;">RS485</th>
+      </tr>
+      <tr>
+        <td style="height:30px;" ><i class="fas fa-network-wired text-success fa-2xl" style="font-size:20px;"></i> &nbsp IP:192.168.0.1 - SEL849 </td>
+        <td><i class="fas fas fa-charging-station text-success fa-2xl" style="font-size:20px;"></i> &nbsp PORT:1 SEL849</td>
+      </tr>
+      <tr>
+        <td style="height:30px;" ><i class="fas fa-network-wired text-white fa-2xl" style="font-size:20px;"></i> &nbsp IP:192.168.0.1 - SEL849</td>
+      </tr>
+      </table>
+    </div>
+    </section> -->
+
+
+  <p id="monitorData" hidden ><?php echo JSON_encode( $monitor);?></p>
+  <p id="deviceData" hidden><?php echo JSON_encode( $device);?></p>
+<!-- //////////////////////////////////////////////////////////////////// -->
+<div class="row">
+      <div  class="col-lg-12">
+        <div class="box box-solid">
+          <div class="box-header ">
+            <h3 class="box-title"><b>Device List</b></h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="table-responsive">
+              <!-- isi -->
+              <?php   foreach(array_reverse($device)  as $data){?>
+              <?php
+                $port="";
+                if ($data->port_type==0){
+                  $port = "Modbus Port : ".$data->port_number;
+                }
+                else if($data->port_type==1){
+                  $port = "TCP/IP IP : ".$data->ip_address; 
+                }
+                else if($data->port_type==2){
+                  $port = "IEC61850 IP :".$data->ip_address; 
+                }
+                ?>
+              <div class= "col-lg-3 col-xs-6">
+                <div class="small-box bg-blue ">
+                  <div class="inner">
+                    <h4 style="margin:0px;"><b><?php echo $data->type; ?></b></h4>
+                    <p  style="margin:0px;"><?php echo $port;?></p>
+                    <p style="margin:0px;"><?php echo $data->rack_location?></p>
+                 </div>
+                <div class="icon">
+                  <i class="ion ion-android-desktop"></i>
+                </div>
+                  <a href="#" class="small-box-footer" onClick="gotoDevice(<?= $data->no?>)">More Detail <i class="fa fa-arrow-circle-right" > </i></a>
+                </div>
+              </div>
+             <?php } ?>
+            </div>
+            <!-- /.table-responsive -->
+          </div>
+          <!-- /.box-body -->
+          <div class="box-footer clearfix">
+            </div>
+          <!-- /.box-footer -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col -->
+    </div>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
   <div class="row">
@@ -277,11 +341,11 @@ ini_set('error_reporting', E_ALL);
         <div class="box-header">
           <h3 class="box-title">Disturbance Record per Month</h3>
 
-          <!-- <div class="box-tools pull-right">
+          <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div> -->
+              </div> 
         </div>
         <div class="box-body">
           <div class="chart">
@@ -356,13 +420,11 @@ ini_set('error_reporting', E_ALL);
       </div>
       <!-- /.col -->
     </div>
-
-
   </div>
 
   <!-- /.row -->
   <div class="box-footer" style="text-align:center">
-    DMS &copy<a href=""><strong> PT. Micronet Gigatech Indoglobal</strong></a> 2021
+    DMS &copy<a href=""><strong> PT. Micronet Gigatech Indoglobal</strong></a> 2023
   </div>
 
   <!-- =========================================================================================================== -->
@@ -474,7 +536,7 @@ ini_set('error_reporting', E_ALL);
       } ?>
 
 
-      var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-body'><h5 class='card-title'>" + <?= '"' . $value->device_name . '"' ?> + "</h5><ul class='list-group list-group-flush'><li class='list-group-item'>Machine Code<span class='badge bg-primary rounded-pill'>" + <?= '"' . $value->machine_code . '"' ?> + "</span></li><li class='list-group-item'>Location<span class='badge bg-primary rounded-pill'>" + <?= '"' . $value->location . '"' ?> + "</span></li><li class='list-group-item'>Disturbance Today : <span class='badge bg-primary rounded-pill'>" + <?= '"' . $find . '"' ?> + "</span></li></ul><a style='color:white;' href='device/index/" + <?= '"' . $value->machine_code . '"' ?> + "' class='btn btn-primary'>Detail</a></div></div>";
+      var customPopup = `<div style='width:300px;' class='card w-75'><div class='card-body'><h5 class='card-title'><?= $value->device_name ?> </h5><ul class='list-group list-group-flush'><li class='list-group-item'>Machine Code<span class='badge bg-primary rounded-pill'><?=  $value->machine_code?></span></li><li class='list-group-item'>Location<span class='badge bg-primary rounded-pill'> <?= $value->location  ?> </span></li><li class='list-group-item'>Disturbance Today : <span class='badge bg-primary rounded-pill'> <?=  $find  ?></span></li></ul><a style='color:white;' href='device/index/<?=  $value->machine_code ?>' class='btn btn-primary'>Detail</a></div></div>`;
       L.marker([<?= $value->latitude ?>, <?= $value->longitude ?>], {
           icon: <?= $image ?>,
           radius: 90000,
@@ -485,18 +547,15 @@ ini_set('error_reporting', E_ALL);
         .addTo(map);
 
     <?php }  ?>
-  </script>
-
-
-
-
-
-
-  <script>
+ 
     $(document).ready(function() {
       $('.sidebar-menu').tree()
       startConnect();
     })
+
+    function gotoDevice(x){
+        alert(x)
+    }
   </script>
 
   </body>

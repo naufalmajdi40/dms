@@ -13,9 +13,6 @@ class Device_model extends CI_Model
     public $user = 'username';
     public $no = 'no';
     public $order = 'DESC';
-
-
-    
 	// Konstrutor    
     function __construct()
     {
@@ -26,10 +23,7 @@ class Device_model extends CI_Model
 		// $username    = $this->session->userdata['username'];
 		$this->datatables->select("data.no,data.machine_code,data.relay_id,data.lokasi,data.status,data.nama_file,data.waktu");
         $this->datatables->from('data');
-        $this->datatables->add_column('action', '<button type="button" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i></button>');
-       
-
-      
+        $this->datatables->add_column('action', '<button type="button" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i></button>'); 
         return $this->datatables->generate();
     }
    
@@ -63,12 +57,8 @@ function get_all()
 		$this->db->from('device_list');
 	    $this->db->where('device_user.username', $user);
                                                              // $this->db->where('data.machine_code', 'device_user.machine_code');
-	    $this->db->join('device_user','device_user.machine_code = device_list.machine_code');
-        // $this->db->join('data','device_list.machine_code = data.machine_code');
-      
-        
+	    $this->db->join('device_user','device_user.machine_code = device_list.machine_code');    
 		$data = $this->db->get()->result();
-        //$data = $this->db->count_all_results();
 		return $data;
     }
 

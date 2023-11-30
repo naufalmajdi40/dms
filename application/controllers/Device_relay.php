@@ -7,7 +7,7 @@ if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
 // Deklarasi pembuatan class Admin
-class Device extends CI_Controller {
+class Device_relay extends CI_Controller {
 	
 	// Konstrutor 
 	function __construct() {
@@ -40,8 +40,6 @@ class Device extends CI_Controller {
 	
 		$id_product=$deviceUse->machine_code;
 		$user=$row->username;
-		
-	
 			$Sensor=array(
 				'kode_mesin' => $code,  
 				'sensor_data'=>$this->baca_data($code),
@@ -52,7 +50,7 @@ class Device extends CI_Controller {
 				'id_product'=>$id_product,
 				'pemetaan'=>$this->Device_model->get_map($user), 
 				'monitor'=>$this->monitor_data($code),
-				'device'=>$this->Mon_model->get_device_permesin($code)->result()
+				'device'=>$this->Mon_model->get_device_relay($code)->result()
 					
 			);
 	
@@ -62,14 +60,23 @@ class Device extends CI_Controller {
 		
 	}
 	public function monitor_data($code){
-		$qry ="select * FROM im_mon a inner join device_list_perdevice b on a.id_device =b.id_device where a.machine_code ='".$code."' ORDER BY a.position ";
+		$qry ="select * FROM im_mon a inner join device_list_perdevice b on a.id_device =b.id_device ORDER BY a.position ";
 		return $this->db->query($qry)->result();
 	}
 
 	public function search_data(){
 		$code = $this->input->get('code');
 		$name = $this->input->get('name');
-		$qry ="SELECT *, a.id AS im_mon_id FROM im_mon a LEFT JOIN device_list b ON a.machine_code = b.machine_code where a.name like '%".$name."%' and a.machine_code='".$code."'  ORDER BY a.position ASC";
+		$qry ="SELECT
+					*, a.id AS im_mon_id
+				FROM
+					device_list_perdevice b
+				LEFT JOIN im_mon a ON a.machine_code = b.machine_code and
+				a.id_device = b.id_device
+				WHERE
+					a.NAME LIKE '%".$name."%' and b.no = $code
+				ORDER BY
+					a.position ASC";
 		#$qry ="select * FROM im_mon a inner join device_list_perdevice b on a.id_device =b.id_device where name like '%".$name."%' and a.machine_code='".$code."' ORDER BY a.position ";
 		$result=$this->db->query($qry)->result();
 		echo  json_encode($result);
@@ -77,11 +84,6 @@ class Device extends CI_Controller {
 	}
 	public function baca_data($id_product)
 	{
-
-		// $this->db->select('no,machine_code,type,port_type,description,relay_id,lokasi,status,nama_file,tanggal,waktu');
-		// $this->db->from('data');
-		// $this->db->where('machine_code', $nim);
-
 		$this->db->select('*');
 		$this->db->from('device_user');
 	    $this->db->where('device_user.machine_code', $id_product);
@@ -99,8 +101,6 @@ class Device extends CI_Controller {
 	    $this->db->where('device_user.machine_code', $user);
 		$this->db->where('data.tanggal', $tanggal);
 	    $this->db->join('data','data.machine_code = device_user.machine_code');
-
-	
 		$num_results = $this->db->count_all_results();
 	  //   $this->db->where('k.id_thn_akad', $thn_akad);
 	  //   $this->db->join('matakuliah as m','m.kode_matakuliah = k.kode_matakuliah');
@@ -111,7 +111,7 @@ class Device extends CI_Controller {
 
 	 public function count_disturbance($user)
 	{
-			date_default_timezone_set('Asia/Jakarta');
+		date_default_timezone_set('Asia/Jakarta');
 		$tanggal= date('Y-m-d');
 		$this->db->select('*, count(*) as jumlah');
 		$this->db->from('device_user');

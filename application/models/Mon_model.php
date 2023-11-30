@@ -5,18 +5,31 @@ class Mon_model extends CI_Model{
         $qry ="Select *, a.id as im_mon_id from im_mon a left join device_list b on a.machine_code=b.machine_code order by a.position asc";
         return $this->db->query($qry);
     }
-    function get_device_permesin(){
+    function get_device_permesin($code){
         $qry ="SELECT
                     b.location,
                     b.device_name,
                     b.gi_name,
                     a.*
-                
                 FROM
                     device_list_perdevice a
-                LEFT JOIN device_list b ON a.machine_code = b.machine_code order by a.pos asc";
+                LEFT JOIN device_list b ON a.machine_code = b.machine_code where a.machine_code = '".$code."' order by a.pos asc";
         return $this->db->query($qry);
     }
+    function get_device_relay($code){
+        $qry ="SELECT
+                    b.location,
+                    b.device_name,
+                    b.gi_name,
+                    a.*
+                FROM
+                    device_list_perdevice a
+                LEFT JOIN device_list b ON a.machine_code = b.machine_code where a.no = '".$code."' order by a.pos asc";
+        return $this->db->query($qry);
+    }
+
+
+
     function insert($data){
         return $this->db->insert($this->table,$data);
     }
