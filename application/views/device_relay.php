@@ -13,14 +13,14 @@
 
 
 <script type="text/javascript">
-    setInterval("cuacaUpdate();",2000); 
+    //setInterval("cuacaUpdate();",2000); 
     function cuacaUpdate(){
       $('#refreshh').load(location.href + ' #updateTable');
     }
   </script>
 
 <script type="text/javascript">
-    setInterval("scriptUpdate();",2000); 
+    //setInterval("scriptUpdate();",2000); 
     function scriptUpdate(){
       $('#refresh').load(location.href + ' #update');
       // $('#refreshh').load(location.href + ' #updatee');
@@ -95,9 +95,9 @@
 
  
 
- <div class="clearfix visible-sm-block"></div>
+ <div  class="clearfix visible-sm-block"></div>
 
- <div  class="row">
+ <div   class="row">
            <!-- /.col (LEFT) -->
         <div  class="col-md-12">
           <!-- LINE CHART -->
@@ -173,7 +173,7 @@
 
         <div  class="row">
            <!-- /.col (LEFT) -->
-        <div  class="col-md-6">
+        <div class="col-md-6">
           <!-- LINE CHART -->
           <div class="box box-info">
             <div class="box-header with-border">

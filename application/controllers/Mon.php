@@ -80,7 +80,7 @@ class Mon extends CI_controller{
             // $id_product=$deviceUse->machine_code;
             $user=$rowAdm->username;
     
-        $row['data']=$this->Mon_model->get_device_permesin();
+        $row['data']=$this->Mon_model->get_device_permesin_all();
     
         $this->load->view('header',$dataAdm);	 // Menampilkan bagian header dan object data users
         $this->load->view('dashboard_mon',$row); // Menampilkan config com

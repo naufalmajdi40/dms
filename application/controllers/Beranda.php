@@ -16,6 +16,7 @@ class Beranda extends CI_Controller {
 		$this->load->model('Device_model');
 		$this->load->model('Data_model');
 		$this->load->model('Device_model');
+		$this->load->model('Mon_model');
 	    $this->load->model('Device_user');
 		$this->load->model('Notifikasi_model');
 		$this->load->library('form_validation');
@@ -73,7 +74,8 @@ class Beranda extends CI_Controller {
 				'id_product'=>$id_product,
 				'pemetaan'=>$this->Device_model->get_map($user),
 				'monitor'=>$this->monitor_data(),
-				'device'=>$this->device_list_device()
+				'device'=>$this->device_list_device(),
+				'all_device'=>$this->Mon_model->get_device_permesin_all()->result()
 				// 'jenis_tanaman'=>$this->Tanaman_model->get_by_id($id_product)->jenis_tanaman, 
 				// 'tgl_panen'=>$this->Tanaman_model->get_by_id($id_product)->tgl_panen,
 				// 'latitude'=>$this->Notifikasi_model->get_by_id($id_product)->latitude,
@@ -98,7 +100,8 @@ class Beranda extends CI_Controller {
 				'id_product'=>$id_product,
 				'pemetaan'=>$this->Device_model->get_map($user), 
 				'monitor'=>$this->monitor_data(),
-				'device'=>$this->device_list_device()
+				'device'=>$this->device_list_device(),
+				'all_device'=>$this->Mon_model->get_device_permesin_all()->result()
 				// 'jenis_tanaman'=>$this->Tanaman_model->get_by_id($id_product)->jenis_tanaman, 
 				// 'tgl_panen'=>$this->Tanaman_model->get_by_id($id_product)->tgl_panen,
 				// 'latitude'=>$this->Notifikasi_model->get_by_id($id_product)->latitude,

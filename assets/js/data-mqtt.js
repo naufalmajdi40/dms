@@ -63,12 +63,16 @@ function onMessageArrived(message) {
                 let val = parseFloat(parsemsg.val)
                 if (parsemsg.dataType == "float") {
                     $(`#val_${machine_code}_${id_device}_${alias}`).text(val.toFixed(3))
+
+                    $(`#dtx_${machine_code}_${id_device}_${alias}`).text(val.toFixed(3))
+                    console.log(`#dtx_${machine_code}_${id_device}_${alias}`)
                 } else {
                     val = parseInt(parsemsg.val)
                     $(`#val_${machine_code}_${id_device}_${alias}`).text(val)
+                    $(`#dtx_${machine_code}_${id_device}_${alias}`).text(val)
                 }
                 max_val = dataMon[i].max_value
-                console.log(dataMon[i])
+                    //console.log(dataMon[i])
 
                 const deg = (val / max_val) * 180;
                 try {

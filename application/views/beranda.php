@@ -25,7 +25,7 @@ ini_set('error_reporting', E_ALL);
 
   <script type="text/javascript">
    // startConnect();
-   setInterval("cuacaUpdate();", 2000);
+//   setInterval("cuacaUpdate();", 2000);
 
     function cuacaUpdate() {
       $('#refreshh').load(location.href + ' #updateTable');
@@ -169,13 +169,13 @@ ini_set('error_reporting', E_ALL);
 
   <div class="row">
     <!-- /.col (LEFT) -->
-    <div class="col-md-6">
+    <div class="col-md-12">
       <!-- LINE CHART -->
       <div class="box box-solid">
         <div class="box-header">
           <h3 class="box-title">Coverage Area</h3>
         </div>
-        <div class="box-body">
+        <div class="box-body" style="z-index: 2;">
           <?php
           $kodePemetaan = array();
           $kodeHasil =  array();
@@ -188,8 +188,26 @@ ini_set('error_reporting', E_ALL);
           }
           $result = array_diff($kodePemetaan, $kodeHasil);
           ?>
-          <div id="map" style="height:350px"></div>
+          <div id="map" style="height:350px;z-index:1"></div>
+
+          <div id= "mon-body" style=" position:absolute;background-color:#009551;top:50px;right:0px;width:250px;height:350px;z-index:2;overflow: auto">
+         
+          <?php $i = 0; foreach(array_reverse($all_device)  as $data)
+				          { ?>
+                 
+          <div style="border-bottom:2px solid #00a65a;padding-bottom:10px;">
+              <h5 style=" text-align: center;flex-wrap:wrap; color:white;"><b><?php echo($device[$i]->rack_location);?>- <?=($device[$i]->type);?></b></h5> 
+              <div style="display:flex;flex-wrap:wrap ; gap: 0.3em ;margin-left:5px; " id="bd_<?php echo($device[$i]->id_device); $i++;?>">   
+              </div>
+            </div>
+              
+             <?php }?>
+            
+            <div class="text-center"><a href="device/index/0001"><h5 class="text-white"style="color:white">More Details</h5></a></div> 
+          </div>
+        
         </div>
+    
         <!-- /.box-body -->
       </div>
       <!-- /.box -->
@@ -197,7 +215,7 @@ ini_set('error_reporting', E_ALL);
     </div>
    
 
-    <section  class="col-lg-6"style ="  display:height:300px;flex;flex-direction: row;">
+    <section hidden class="col-lg-6"style ="  display:height:300px;flex;flex-direction: row;">
        
       <!-- ////////////////////// monitor cuy/////////////// -->
       <?php  
@@ -305,7 +323,7 @@ ini_set('error_reporting', E_ALL);
                 }
                 ?>
               <div class= "col-lg-3 col-xs-6">
-                <div class="small-box bg-blue ">
+                <div class="small-box bg-green ">
                   <div class="inner">
                     <h4 style="margin:0px;"><b><?php echo $data->type; ?></b></h4>
                     <p  style="margin:0px;"><?php echo $port;?></p>
@@ -314,7 +332,7 @@ ini_set('error_reporting', E_ALL);
                 <div class="icon">
                   <i class="ion ion-android-desktop"></i>
                 </div>
-                  <a href="#" class="small-box-footer" onClick="gotoDevice(<?= $data->no?>)">More Detail <i class="fa fa-arrow-circle-right" > </i></a>
+                  <a href="device_relay/index/<?=$data->no ?>" class="small-box-footer" >More Detail <i class="fa fa-arrow-circle-right" > </i></a>
                 </div>
               </div>
              <?php } ?>
@@ -497,7 +515,7 @@ ini_set('error_reporting', E_ALL);
       iconUrl: 'assets/img/device2.png'
     });
 
-    var map = L.map('map').setView([-1.766654, 117.347558], 5);
+    var map = L.map('map').setView([-7.2840228, 111.1514343], 8);
 
     var customOptions = {
       'maxWidth': '680px',
@@ -547,10 +565,58 @@ ini_set('error_reporting', E_ALL);
         .addTo(map);
 
     <?php }  ?>
- 
+    function readDevice(){
+      $.get("mon/apiReadMon",(res)=>{
+       
+        // $(`#mon_data`).val(res)
+
+        dt = JSON.parse(res)
+        buf= dt.data
+          appendWidget(buf)
+      })}
+    function appendWidget(buf){
+      //buf = data
+      console.log(buf)
+      for(let i =0 ;i<buf.length;i++){
+
+        let data_type= ""
+        if(buf[i].data_type=="float" || buf[i].data_type=="integer"){
+          data_type=`<i class="fas fa-bolt text-white fa-lg" style="line-height:40px;margin-left:10px"></i>`
+        }
+        else if(buf[i].data_type=="boolean"){
+          data_type=`<div class=" fa-lg bg-red" style="margin-left:3px;margin-top:5px;border:2px solid gray; width:25px;height:25px;border-radius:100%"></div>`
+        }
+        else if(buf[i].data_type=="visible-string"){
+          data_type=`<i class="fas fa-info text-white fa-lg" style="line-height:40px;margin-left:10px"></i>`
+        }
+        else if(buf[i].data_type=="utc-time"){
+          data_type=`<i class="far fa-clock text-white fa-lg" style="line-height:40px;margin-left:5px"></i>`
+        }
+        //if
+       // 00a65a
+        dthtml=`<div  style="height:35px;width:48% ; color:white;background-color:#00a65a;padding:0px;display:flex;">
+                    <div style="width:30px;height:35px;">
+                       ${data_type}
+                    </div>
+                    <div>
+                      <h6 style="line-height: 0px;">
+                      ${buf[i].name}  
+                      </h6>
+                      <h4 style="line-height: 5px;" id="dtx_${buf[i].machine_code}_${buf[i].id_device}_${buf[i].alias}" >
+                       0
+                      </h4>
+                      </div>
+                  </div>
+                  `
+        $(`#bd_${buf[i].id_device}`).append(dthtml)
+        console.log(buf[i].id_device)
+      }
+    }
     $(document).ready(function() {
       $('.sidebar-menu').tree()
+      readDevice()
       startConnect();
+
     })
 
     function gotoDevice(x){

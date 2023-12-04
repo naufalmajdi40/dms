@@ -143,12 +143,6 @@ class Device_relay extends CI_Controller {
 		$this->db->group_by('type');
 		$this->db->from('data');
 		$this->db->where('machine_code', $nim);
-		// $this->db->where('tanggal', $tanggal);
-		// $num_results = $this->db->count_all_results();
-	  //   $this->db->where('k.id_thn_akad', $thn_akad);
-	  //   $this->db->join('matakuliah as m','m.kode_matakuliah = k.kode_matakuliah');
-		// $disturbance = $this->db->get()->result();
-		//$hitung = $disturbance->num_rows();
 		$dataPie = $this->db->get()->result();
 		return $dataPie;
 	}

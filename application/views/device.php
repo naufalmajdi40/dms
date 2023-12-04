@@ -382,7 +382,6 @@ var redIcon = new HubIcon({
 });
 
 	var map = L.map('map').setView([-1.766654, 117.347558], 5);
-
   var customOptions =
         {
         'maxWidth': '680px',
@@ -411,7 +410,6 @@ var redIcon = new HubIcon({
           } 
            
         if($find>0){$image="redIcon";}else{$image="greenIcon";}?>
-
 
 var customPopup = "<div style='width:300px;' class='card w-75'><div class='card-body'><h5 class='card-title'>"+<?= '"'.$value->device_name.'"' ?>+"</h5><ul class='list-group list-group-flush'><li class='list-group-item'>Machine Code<span class='badge bg-primary rounded-pill'>"+<?= '"'.$value->machine_code.'"' ?>+"</span></li><li class='list-group-item'>Location<span class='badge bg-primary rounded-pill'>"+<?= '"'.$value->location.'"' ?>+"</span></li><li class='list-group-item'>Disturbance Today : <span class='badge bg-primary rounded-pill'>"+<?= '"'.$find.'"' ?>+"</span></li></ul><a style='color:white;' href='#' class='btn btn-primary'>Detail</a></div></div>";
 		L.marker([<?= $value->latitude ?>, <?= $value->longitude ?>], {
